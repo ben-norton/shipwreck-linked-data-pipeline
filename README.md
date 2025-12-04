@@ -1,19 +1,25 @@
 # Shipwreck Linked Data Pipeline
-This proof-of-concept demonstrates a Python-based ETL (Extract, Transform, Load) pipeline that converts shipwreck data from tabular formats into Linked Art-compliant JSON-LD. The pipeline transforms external shipwreck datasets into structured Linked Data, enabling their integration with and enrichment of existing internal collections.
+This proof-of-concept demonstrates a Python-based ETL (Extract, Transform, Load) pipeline that converts shipwreck data from tabular formats into Linked Art-compliant JSON-LD. 
+The pipeline transforms external shipwreck datasets into structured Linked Data, enabling their integration with and enrichment of existing internal collections.
 
 ## Project Scope
 General project documentation stored under [project-docs](/project-docs) and transformation results under [/pipeline/linked-art](/pipeline/linked-art) covers three key areas:
 1. **Dataset Selection** - Criteria and rationale for choosing shipwreck data sources (detailed in the [shipwreck-datasets README](sources/datasets/README.md))
-2. **Transformation methodology** – Detailed procedures and transformationreports for converting tabular data into Linked Art format
+2. **Transformation methodology** – Detailed procedures and transformation reports for converting tabular data into Linked Art format
 3. **Data modeling** – Overview of mapping shipwreck records to [Linked Open Usable Data (LOUD)](https://linked.art/loud/) specification through [Linked Art](https://linked.art/).
 
 ## Semantic Connections
-The project also explores potential semantic relationships between shipwreck records and other linked resources, with examples illustrated in the following diagram.
+The project also explores potential semantic relationships between shipwreck records and other linked resources, with examples illustrated in the diagram below.
 ![](project-docs\diagrams\ShipwreckLinkages_20251204.png)
 
-Final transformations and associated documentation generated with the aide of the Claude Sonnet 4.5 LLM Model    
+Final transformations and associated documentation generated with the aid of the Claude Sonnet 4.5 LLM Model    
   
 The Shipwreck Places JSON-LD and Shipwreck Events JSON-LD are generated separately and named accordingly for illustration purposes. The two files would be merged prior to being ingested into a production environment index, the 
+
+Hypothetical Linkages 
+![](https://github.com/ben-norton/shipwreck-linked-data-pipeline/blob/main/project-docs/diagrams/ShipwreckLinkages_20251204.png)
+
+
 
 ## Project Directory Structure
 ```
@@ -57,13 +63,13 @@ rdf-etl-pipelines/
 
 
 ## Source Data
-All source datasets were downloaded from web-based resources listed under the sources README file and in the source metadata yaml files.
+All source datasets were downloaded from web-based resources listed under the sources README file and in the source metadata YAML files.
 
 ## Process
-To initiate the pipeline, please see [procedure.md](project-docs/procedure.md) under project-docs.
+To initiate the pipeline, please refer to [procedure.md](project-docs/procedure.md) in project-docs.
 
 ## Resources
-A collection of resources used in the development of this project and provide further information on the project scope and methodology.  
+A collection of resources used in the development of this project provides further information on the project scope and methodology.  
 
 | Title | URL                                                                                                          |
 | -- |--------------------------------------------------------------------------------------------------------------|
