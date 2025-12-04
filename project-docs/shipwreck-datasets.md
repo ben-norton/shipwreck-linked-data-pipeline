@@ -12,11 +12,11 @@ consistency. For an overview of shipwreck semantics, see the SeaLiT ontology.
 1. Identify and download multiple shipwreck datasets
 2. Profile each dataset using the utility scripts
 3. Use the generated profiles to assess each dataset for suitability, completeness, (perceived) quality, and consistency. In general, the more complete and consistent dataset will facilitate better linkages between resources, the ultimate goal of linked data architectures. Example criteria include:
-A. How complete is the dataset?
-B. Does the dataset contain latitude and longitude coordinates?
-C. Are the ship names clear?
-D. Are the columns properly formatted (For year column, are the values integers?)?  
-4. 
+A. What is completeness percentage for each column? Are there empty columns?
+B. Does the dataset include a dictionary of column names? If not, do all the columns make sense?
+C. Does the dataset contain latitude and longitude coordinates or just a location description?
+D. Are the ship names clear?
+E. Are the columns properly formatted (For year column, are the values integers?)?  
 4. Select the dataset and convert the CSV file into a Linked Art JSON-LD file.
 
 ## Hypothetical Shipwreck Concept Linkages
