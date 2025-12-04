@@ -1,11 +1,12 @@
 from datetime import date
 import os
 import globals as cfg
+from pathlib import Path
+root_dir = Path(__file__).resolve().parents[2]
 
 # This script generates CSV stats for CSV datasets using the CSVKit Library.
 # Files are specified by dataset name (see globals.py)
 
-root_dir = cfg.get_project_root()
 datasets = cfg.get_datasets()
 
 today = date.today()
@@ -15,7 +16,7 @@ for dataset in datasets:
     # Set source file
     source_file = str(root_dir) + '/data/input/remapped/' + dataset
     # Set destination folder
-    target_path = str(root_dir) + '/data/output/csvstats/'
+    target_path = str(root_dir) + '/data/profiles/csvstats/'
     datasetName = dataset.replace('.csv','')
     # Set target file containing the full results
     target_full_report = str(target_path) + '/' + datasetName + '-full-csvstats.txt'

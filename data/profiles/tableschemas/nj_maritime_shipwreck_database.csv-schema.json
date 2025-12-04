@@ -1,0 +1,187 @@
+{
+    "fields": [
+        {
+            "name": "shipsName",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "aka",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "shipsOwner",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "vesselType",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "yearBuilt",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "whereBuilt",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "dateLost",
+            "type": "date",
+            "format": "%m/%d/%Y"
+        },
+        {
+            "name": "year",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "month",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "day",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "locationLost",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "latitude",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "longitude",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "causeOfLoss",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "construction",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "flag",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "length",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "beam",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "draft",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "grossTonnage",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "netTonnage",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "homeHailingPort",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "departurePort",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "destinationPort",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "master",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "numberOfCrew",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "numPass",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "livesLost",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "shipValue",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "cargoValue",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "natureOfCargo",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "uslssStationName",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "map",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "lost",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "photoOnFile",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "miscInformation",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "missingValues": [
+        ""
+    ]
+}

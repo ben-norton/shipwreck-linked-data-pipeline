@@ -9,7 +9,7 @@ import os
 
 today = cfg.get_today()
 root_dir = cfg.get_project_root()
-datasets = cfg.get_target_datasets()
+datasets = cfg.get_datasets()
 
 today = date.today()
 ts = today.strftime("%Y%m%d")
@@ -18,7 +18,7 @@ for dataset in datasets:
     # Set source and targets
     source_filename = dataset
     source_file = str(root_dir) + '/data/input/remapped/' + dataset
-    target_path = str(root_dir) + '/data/output/unique-values/'
+    target_path = str(root_dir) + '/data/profiles/unique-values/'
     datasetName = dataset.replace('.csv', '')
     if not os.path.isdir(target_path):
         os.mkdir(target_path)
@@ -53,6 +53,5 @@ for dataset in datasets:
         unique_values = df[col].dropna().unique()
 
         for val in unique_values:
-            print(val)
             ws.append([val])
     wb.save(unique_counts_file)

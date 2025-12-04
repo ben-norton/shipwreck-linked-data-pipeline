@@ -1,0 +1,487 @@
+  1. "shipsName"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       4600
+	Unique values:         4589
+	Longest value:         30 characters
+	Most common values:    Anita (2x)
+	                       Bristol (2x)
+	                       Campbell (2x)
+	                       Julia A Berkele (2x)
+	                       Lone Star (2x)
+
+  2. "aka"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       304
+	Unique values:         258
+	Longest value:         63 characters
+	Most common values:    None (4296x)
+	                       Dive boat capt nickname (30x)
+	                       C R Price (3x)
+	                       10 guns (3x)
+	                       Full Rigged Clipper (3x)
+
+  3. "shipsOwner"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1647
+	Unique values:         1332
+	Longest value:         39 characters
+	Most common values:    None (2953x)
+	                       U S Navy (31x)
+	                       Eastern Transportation Co (13x)
+	                       Reading Rail Co (13x)
+	                       Southern Transportation Co (10x)
+
+  4. "vesselType"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4466
+	Unique values:         214
+	Longest value:         30 characters
+	Most common values:    Schooner (1742x)
+	                       Steamship (332x)
+	                       Brig (260x)
+	                       Sloop (234x)
+	                       Bark (212x)
+
+  5. "yearBuilt"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2733
+	Unique values:         184
+	Longest value:         13 characters
+	Most common values:    None (1867x)
+	                       1866 (94x)
+	                       1874 (92x)
+	                       1872 (82x)
+	                       1883 (80x)
+
+  6. "whereBuilt"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2300
+	Unique values:         625
+	Longest value:         30 characters
+	Most common values:    None (2300x)
+	                       Bath, ME (129x)
+	                       Philadelphia, PA (75x)
+	                       Wilmington, DE (54x)
+	                       New York, NY (54x)
+
+  7. "dateLost"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4540
+	Unique values:         3723
+	Longest value:         12 characters
+	Most common values:    None (60x)
+	                       1838 - 1878 (40x)
+	                       6/1825 (14x)
+	                       3/12/1888 (12x)
+	                       8/18/1879 (12x)
+
+  8. "year"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4540
+	Unique values:         263
+	Smallest value:        1,705
+	Largest value:         2,023
+	Sum:                   8,563,323
+	Mean:                  1,886.194
+	Median:                1,885
+	StDev:                 43.058
+	Most decimal places:   0
+	Most common values:    1,886 (130x)
+	                       1,885 (103x)
+	                       1,879 (91x)
+	                       1,877 (81x)
+	                       1,884 (76x)
+
+  9. "month"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4306
+	Unique values:         13
+	Smallest value:        1
+	Largest value:         12
+	Sum:                   27,546
+	Mean:                  6.397
+	Median:                6
+	StDev:                 3.761
+	Most decimal places:   0
+	Most common values:    12 (494x)
+	                       3 (473x)
+	                       1 (451x)
+	                       2 (410x)
+	                       11 (402x)
+
+ 10. "day"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4095
+	Unique values:         33
+	Smallest value:        1
+	Largest value:         33
+	Sum:                   63,655
+	Mean:                  15.545
+	Median:                16
+	StDev:                 8.788
+	Most decimal places:   0
+	Most common values:    None (505x)
+	                       20 (164x)
+	                       12 (158x)
+	                       1 (158x)
+	                       16 (153x)
+
+ 11. "locationLost"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4458
+	Unique values:         1881
+	Longest value:         38 characters
+	Most common values:    Sandy Hook (243x)
+	                       Barnegat (161x)
+	                       Cape May (159x)
+	                       None (142x)
+	                       Long Branch, NJ (66x)
+
+ 12. "latitude"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       741
+	Unique values:         680
+	Longest value:         12 characters
+	Most common values:    None (3859x)
+	                       37.50000 (3x)
+	                       40.29166 (3x)
+	                       38.45777 (3x)
+	                       40.33333 (3x)
+
+ 13. "longitude"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       739
+	Unique values:         672
+	Longest value:         10 characters
+	Most common values:    None (3861x)
+	                       -73.50000 (5x)
+	                       -74.85000 (4x)
+	                       -74.00000 (4x)
+	                       -74.91666 (4x)
+
+ 14. "causeOfLoss"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4268
+	Unique values:         1004
+	Longest value:         52 characters
+	Most common values:    Stranded (1260x)
+	                       Grounded (399x)
+	                       Foundered (343x)
+	                       None (332x)
+	                       Burned (244x)
+
+ 15. "construction"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1374
+	Unique values:         21
+	Longest value:         13 characters
+	Most common values:    None (3226x)
+	                       Wood (998x)
+	                       Steel (269x)
+	                       Iron (79x)
+	                       Fiberglass (10x)
+
+ 16. "flag"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1561
+	Unique values:         39
+	Longest value:         11 characters
+	Most common values:    None (3039x)
+	                       US (1118x)
+	                       England (230x)
+	                       Germany (30x)
+	                       Norway (29x)
+
+ 17. "length"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2002
+	Unique values:         1075
+	Longest value:         13 characters
+	Most common values:    None (2598x)
+	                       45 (13x)
+	                       200 (12x)
+	                       116 (11x)
+	                       110 (11x)
+
+ 18. "beam"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1900
+	Unique values:         427
+	Longest value:         10 characters
+	Most common values:    None (2700x)
+	                       35 (41x)
+	                       32 (31x)
+	                       28 (29x)
+	                       23 (27x)
+
+ 19. "draft"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2041
+	Unique values:         317
+	Longest value:         7 characters
+	Most common values:    None (2559x)
+	                       9 (74x)
+	                       8 (62x)
+	                       10 (54x)
+	                       11 (44x)
+
+ 20. "grossTonnage"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2929
+	Unique values:         1511
+	Longest value:         10 characters
+	Most common values:    None (1671x)
+	                       13 (23x)
+	                       23 (20x)
+	                       12 (20x)
+	                       42 (20x)
+
+ 21. "netTonnage"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1444
+	Unique values:         980
+	Smallest value:        5
+	Largest value:         11,399
+	Sum:                   902,602.02
+	Mean:                  625.071
+	Median:                213.58
+	StDev:                 1,194.996
+	Most decimal places:   2
+	Most common values:    None (3156x)
+	                       28 (15x)
+	                       14 (13x)
+	                       19 (13x)
+	                       13 (12x)
+
+ 22. "homeHailingPort"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2809
+	Unique values:         443
+	Longest value:         30 characters
+	Most common values:    None (1791x)
+	                       New York, NY (481x)
+	                       Philadelphia, PA (404x)
+	                       Boston, MA (142x)
+	                       Somers Point, NJ (109x)
+
+ 23. "departurePort"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2874
+	Unique values:         636
+	Longest value:         30 characters
+	Most common values:    None (1726x)
+	                       New York, NY (469x)
+	                       Philadelphia, PA (292x)
+	                       Norfolk, VA (131x)
+	                       Baltimore, MD (97x)
+
+ 24. "destinationPort"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2979
+	Unique values:         432
+	Longest value:         29 characters
+	Most common values:    None (1621x)
+	                       New York, NY (997x)
+	                       Philadelphia, PA (369x)
+	                       Boston, MA (151x)
+	                       Fishing service (88x)
+
+ 25. "master"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2298
+	Unique values:         1756
+	Longest value:         25 characters
+	Most common values:    None (2302x)
+	                       Smith (38x)
+	                       Brown (12x)
+	                       Johnson (11x)
+	                       Robinson (10x)
+
+ 26. "numberOfCrew"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2358
+	Unique values:         107
+	Longest value:         9 characters
+	Most common values:    None (2242x)
+	                       5 (307x)
+	                       3 (273x)
+	                       4 (250x)
+	                       6 (239x)
+
+ 27. "numPass"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       430
+	Unique values:         93
+	Longest value:         7 characters
+	Most common values:    None (4170x)
+	                       0 (220x)
+	                       1 (36x)
+	                       2 (28x)
+	                       3 (9x)
+
+ 28. "livesLost"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2573
+	Unique values:         66
+	Longest value:         18 characters
+	Most common values:    0 (2051x)
+	                       None (2027x)
+	                       1 (124x)
+	                       2 (67x)
+	                       3 (60x)
+
+ 29. "shipValue"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1439
+	Unique values:         169
+	Longest value:         11 characters
+	Most common values:    None (3161x)
+	                       $5,000 (87x)
+	                       $10,000 (85x)
+	                       $3,000 (78x)
+	                       $2,000 (70x)
+
+ 30. "cargoValue"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       971
+	Unique values:         254
+	Longest value:         20 characters
+	Most common values:    None (3629x)
+	                       $2,000 (39x)
+	                       $1,000 (37x)
+	                       $3,000 (35x)
+	                       $0 (31x)
+
+ 31. "natureOfCargo"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1871
+	Unique values:         714
+	Longest value:         47 characters
+	Most common values:    None (2729x)
+	                       Coal (283x)
+	                       In ballast (113x)
+	                       Lumber (95x)
+	                       Oysters (83x)
+
+ 32. "uslssStationName"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1063
+	Unique values:         392
+	Longest value:         51 characters
+	Most common values:    None (3537x)
+	                       Sandy Hook (70x)
+	                       Atlantic City (46x)
+	                       Little Egg (29x)
+	                       Barnegat (28x)
+
+ 33. "map"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3422
+	Unique values:         5
+	Longest value:         1 characters
+	Most common values:    N (1492x)
+	                       Y (1254x)
+	                       None (1178x)
+	                       A (598x)
+	                       F (78x)
+
+ 34. "lost"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3279
+	Unique values:         3
+	Most common values:    True (1791x)
+	                       False (1488x)
+	                       None (1321x)
+
+ 35. "photoOnFile"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4598
+	Unique values:         3
+	Most common values:    False (4255x)
+	                       True (343x)
+	                       None (2x)
+
+ 36. "miscInformation"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3752
+	Unique values:         2729
+	Longest value:         62 characters
+	Most common values:    None (848x)
+	                       Total loss (397x)
+	                       Refloated (239x)
+	                       Partial loss (32x)
+	                       Sank (31x)
+
+Row count: 4600

@@ -7,7 +7,7 @@ import globals as cfg
 today = cfg.get_today()
 root_dir = cfg.get_project_root()
 datasets = cfg.get_datasets()
-md_file = str(root_dir) + '/data/output/dataset-shapes-table.md'
+md_file = str(root_dir) + '/data/profiles/md/dataset-shapes-table.md'
 
 shape_dict = {}
 for dataset in datasets:

@@ -1,0 +1,339 @@
+  1. "vesselName"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       4939
+	Unique values:         4879
+	Longest value:         38 characters
+	Most common values:    unknown - (6x)
+	                       Florence C. - 1890 (3x)
+	                       Marie Anne - 1900 (2x)
+	                       Jane Porter - 1884 (2x)
+	                       Maggie - 1879 (2x)
+
+  2. "dateOfWreck"
+
+	Type of data:          Date
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4930
+	Unique values:         3724
+	Smallest value:        1583-08-29
+	Largest value:         2001-01-01
+	Most common values:    1873-08-24 (54x)
+	                       1879-01-01 (18x)
+	                       1879-10-29 (18x)
+	                       1871-01-01 (18x)
+	                       1890-12-01 (18x)
+
+  3. "event"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4929
+	Unique values:         56
+	Longest value:         23 characters
+	Most common values:    Stranded (2463x)
+	                       Wrecked (1063x)
+	                       Foundered (468x)
+	                       Collision (148x)
+	                       Sank (146x)
+
+  4. "locationOfwreck"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4931
+	Unique values:         2691
+	Longest value:         62 characters
+	Most common values:    At sea (217x)
+	                       Sable Island (158x)
+	                       Unknown (147x)
+	                       Halifax Harbour (65x)
+	                       Bay of Fundy (54x)
+
+  5. "tonnage"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       6
+	Unique values:         7
+	Smallest value:        14
+	Largest value:         198
+	Sum:                   406
+	Mean:                  67.667
+	Median:                48.5
+	StDev:                 70.978
+	Most decimal places:   0
+	Most common values:    None (4933x)
+	                       81 (1x)
+	                       19 (1x)
+	                       78 (1x)
+	                       198 (1x)
+
+  6. "lengthInFeet"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1
+	Unique values:         2
+	Smallest value:        34
+	Largest value:         34
+	Sum:                   34
+	Mean:                  34
+	Median:                34
+	Most decimal places:   0
+	Most common values:    None (4938x)
+	                       34 (1x)
+
+  7. "breadthInFeet"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+  8. "depthInFeet"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+  9. "masts"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 10. "decks"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 11. "hull"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2
+	Unique values:         2
+	Longest value:         4 characters
+	Most common values:    None (4937x)
+	                       Wood (2x)
+
+ 12. "description"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 13. "story"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 14. "vesselType"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       5
+	Unique values:         4
+	Longest value:         14 characters
+	Most common values:    None (4934x)
+	                       Schooner (2x)
+	                       Fishing (2x)
+	                       Schooner, Tern (1x)
+
+ 15. "typeOfEvent"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       5
+	Unique values:         2
+	Longest value:         4 characters
+	Most common values:    None (4934x)
+	                       Loss (5x)
+
+ 16. "natureOfEvent"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       5
+	Unique values:         4
+	Longest value:         9 characters
+	Most common values:    None (4934x)
+	                       Stranted (2x)
+	                       Wrecked (2x)
+	                       Abandoned (1x)
+
+ 17. "causeOfEvent"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       6
+	Unique values:         7
+	Longest value:         18 characters
+	Most common values:    None (4933x)
+	                       Ice (1x)
+	                       Unknown (1x)
+	                       Stress of Weather (1x)
+	                       Judgement Error (1x)
+
+ 18. "cargo"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 19. "livesLost"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 20. "voyageFrom"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3
+	Unique values:         4
+	Longest value:         37 characters
+	Most common values:    None (4936x)
+	                       Boston, Massachusetts , United States (1x)
+	                       Parrsboro, Nova Scotia , Canada (1x)
+	                       Arichat, Nova Scotia , Canada (1x)
+
+ 21. "voyageTo"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       2
+	Unique values:         3
+	Longest value:         37 characters
+	Most common values:    None (4937x)
+	                       Cornwallis, Nova Scotia , Canada (1x)
+	                       Boston, Massachusetts , United States (1x)
+
+ 22. "remarks"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4
+	Unique values:         4
+	Longest value:         45 characters
+	Most common values:    None (4935x)
+	                       Partial Loss (2x)
+	                       Total Loss. Cargo accounted for $560 of loss. (1x)
+	                       Fire in Engine Room (1x)
+
+ 23. "builtAt"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1
+	Unique values:         2
+	Longest value:         37 characters
+	Most common values:    None (4938x)
+	                       Clarkes Harbour, Nova Scotia , Canada (1x)
+
+ 24. "dateBuilt"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1
+	Unique values:         2
+	Smallest value:        1,969
+	Largest value:         1,969
+	Sum:                   1,969
+	Mean:                  1,969
+	Median:                1,969
+	Most decimal places:   0
+	Most common values:    None (4938x)
+	                       1,969 (1x)
+
+ 25. "officialNumber"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3
+	Unique values:         4
+	Smallest value:        85,373
+	Largest value:         346,194
+	Sum:                   763,040
+	Mean:                  254,346.667
+	Median:                331,473
+	StDev:                 146,520.483
+	Most decimal places:   0
+	Most common values:    None (4936x)
+	                       85,373 (1x)
+	                       331,473 (1x)
+	                       346,194 (1x)
+
+ 26. "registeredat"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       5
+	Unique values:         5
+	Longest value:         39 characters
+	Most common values:    None (4934x)
+	                       Barrington Passage, Nova Scotia, Canada (2x)
+	                       Maitland, Nova Scotia , Canada (1x)
+	                       Parrsboro, Nova Scotia , Canada (1x)
+	                       Halifax, Nova Scotia, Canada (1x)
+
+ 27. "dateRegistered"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+ 28. "propulsion"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       5
+	Unique values:         3
+	Longest value:         7 characters
+	Most common values:    None (4934x)
+	                       Sail (3x)
+	                       Unknown (2x)
+
+ 29. "rig"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       5
+	Unique values:         4
+	Longest value:         14 characters
+	Most common values:    None (4934x)
+	                       Schooner (2x)
+	                       Unknown (2x)
+	                       Schooner, Tern (1x)
+
+ 30. "details"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       0
+	Unique values:         1
+	Most common values:    None (4939x)
+
+Row count: 4939

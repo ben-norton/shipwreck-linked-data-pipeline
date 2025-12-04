@@ -1,0 +1,147 @@
+{
+    "fields": [
+        {
+            "name": "objectID",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "sourceID",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "country",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "minDepth",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "maxDepth",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "depthInfo",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "depthPrecision",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "objectLength",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "locationPrecision",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "siteArea",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "sinkContext",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "sinkYear",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "dating",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "period",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "statutoryProt",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "objectDescription",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "shipChar",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "objectType",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "estimatedTonnage",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "originLocation",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "destination",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "artifacts",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "coastDist",
+            "type": "number",
+            "format": "default"
+        },
+        {
+            "name": "sourceInfo",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "reference",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "website",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "websiteAlt",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "missingValues": [
+        ""
+    ]
+}

@@ -1,0 +1,415 @@
+  1. "objectID"
+
+	Type of data:          Number
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         8481
+	Smallest value:        1
+	Largest value:         8,481
+	Sum:                   35,967,921
+	Mean:                  4,241
+	Median:                4,241
+	StDev:                 2,448.398
+	Most decimal places:   0
+	Most common values:    1 (1x)
+	                       2 (1x)
+	                       3 (1x)
+	                       4 (1x)
+	                       5 (1x)
+
+  2. " sourceID"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         8481
+	Longest value:         19 characters
+	Most common values:    FR 0000168844 00001 (1x)
+	                       FR 0000115995 00001 (1x)
+	                       FR 0000007884 00001 (1x)
+	                       FR 0000118463 00001 (1x)
+	                       FR 0000118464 00001 (1x)
+
+  3. "country"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         10
+	Longest value:         14 characters
+	Most common values:    France (4788x)
+	                       Ireland (3443x)
+	                       Italy (111x)
+	                       United Kingdom (52x)
+	                       Croatia (49x)
+
+  4. "name"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         4087
+	Longest value:         68 characters
+	Most common values:    n.a. (4282x)
+	                       SAINT PIERRE (4x)
+	                       UNION (3x)
+	                       HIRONDELLE (3x)
+	                       GEORGIOS (3x)
+
+  5. "minDepth"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3436
+	Unique values:         959
+	Smallest value:        -8
+	Largest value:         4,741
+	Sum:                   240,316.57
+	Mean:                  69.941
+	Median:                22.3
+	StDev:                 315.953
+	Most decimal places:   2
+	Most common values:    None (5045x)
+	                       0 (229x)
+	                       28 (50x)
+	                       20 (43x)
+	                       18 (40x)
+
+  6. "maxDepth"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       288
+	Unique values:         65
+	Smallest value:        0
+	Largest value:         662
+	Sum:                   8,056
+	Mean:                  27.972
+	Median:                14
+	StDev:                 56.149
+	Most decimal places:   0
+	Most common values:    None (8193x)
+	                       0 (80x)
+	                       20 (11x)
+	                       40 (10x)
+	                       30 (9x)
+
+  7. "depthInfo"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         30
+	Longest value:         169 characters
+	Most common values:    n.a. (8451x)
+	                       The remains lie in 10-11 metres (2x)
+	                       The site lies at a depth of around 12m (1x)
+	                       The wreck lies at a general depth of 5 to 6 metres (1x)
+	                       The site lies at a depth of approximately 10 metres of water (1x)
+
+  8. "depthPrecision"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         7
+	Longest value:         63 characters
+	Most common values:    Unknown depth (4985x)
+	                       Least depth known (2439x)
+	                       Least depth unknown, but estimated to be greater than indicated (607x)
+	                       n.a. (426x)
+	                       Reported but not surveyed (14x)
+
+  9. "objectLength"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       1721
+	Unique values:         253
+	Smallest value:        1.5
+	Largest value:         300
+	Sum:                   70,816.3
+	Mean:                  41.148
+	Median:                30
+	StDev:                 35.209
+	Most decimal places:   1
+	Most common values:    None (6760x)
+	                       20 (93x)
+	                       30 (86x)
+	                       50 (79x)
+	                       15 (67x)
+
+ 10. "locationPrecision"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       4662
+	Unique values:         172
+	Smallest value:        0.1
+	Largest value:         10,000
+	Sum:                   2,434,543.7
+	Mean:                  522.21
+	Median:                11.2
+	StDev:                 1,276.874
+	Most decimal places:   1
+	Most common values:    None (3819x)
+	                       10 (941x)
+	                       1,852 (545x)
+	                       100 (405x)
+	                       500 (324x)
+
+ 11. "siteArea"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       52
+	Unique values:         48
+	Smallest value:        0.283
+	Largest value:         40.049
+	Sum:                   503.58
+	Mean:                  9.684
+	Median:                3.141
+	StDev:                 10.813
+	Most decimal places:   11
+	Most common values:    None (8429x)
+	                       0.785 (5x)
+	                       3.141 (2x)
+	                       28.239 (1x)
+	                       0.784 (1x)
+
+ 12. "sinkContext"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         1835
+	Longest value:         609 characters
+	Most common values:    n.a. (6441x)
+	                       Sank in 1944 (19x)
+	                       Sank at the anchorage of St Pierre as a result of the fiery cloud of 05/08/1902 (16x)
+	                       Was submerged in December 1991 in view of the MELLICK plan (13x)
+	                       Sank in the harbor of Caen (10x)
+
+ 13. "sinkYear"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       3745
+	Unique values:         224
+	Smallest value:        1,527
+	Largest value:         2,021
+	Sum:                   7,241,296
+	Mean:                  1,933.59
+	Median:                1,939
+	StDev:                 48.636
+	Most decimal places:   0
+	Most common values:    None (4736x)
+	                       1,917 (609x)
+	                       1,940 (305x)
+	                       1,944 (190x)
+	                       1,918 (187x)
+
+ 14. "dating"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         222
+	Longest value:         41 characters
+	Most common values:    n.a. (8157x)
+	                       C 1st AD (14x)
+	                       C1st AD (11x)
+	                       C1st-2nd AD (11x)
+	                       C1st BC (9x)
+
+ 15. "period"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         32
+	Longest value:         30 characters
+	Most common values:    n.a. (8183x)
+	                       Roman Imperial (123x)
+	                       Roman Republic (55x)
+	                       Roman (19x)
+	                       Late Roman (14x)
+
+ 16. "statutoryProt"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         2
+	Longest value:         4 characters
+	Most common values:    n.a. (8429x)
+	                       Yes (52x)
+
+ 17. "objectDescription"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         3195
+	Longest value:         1,384 characters
+	Most common values:    n.a. (5038x)
+	                       Operation Deadlight submarine (36x)
+	                       Operation Deadlight u-boat (20x)
+	                       Geophysical anomaly identified during an archaeological assessment for a windfarm (14x)
+	                       buried wreck (11x)
+
+ 18. "shipChar"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         1179
+	Longest value:         254 characters
+	Most common values:    n.a. (5637x)
+	                       Trawler (289x)
+	                       Steamer (195x)
+	                       Cargo (154x)
+	                       Barge (123x)
+
+ 19. "objectType"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         147
+	Longest value:         53 characters
+	Most common values:    n.a. (4212x)
+	                       Fishing boat, trawler (686x)
+	                       Steamship (594x)
+	                       Cargo, commercial vessel (367x)
+	                       Steamboat (265x)
+
+ 20. "estimatedTonnage"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Non-null values:       201
+	Unique values:         17
+	Smallest value:        0
+	Largest value:         270
+	Sum:                   1,329
+	Mean:                  6.612
+	Median:                0
+	StDev:                 29.105
+	Most decimal places:   0
+	Most common values:    None (8280x)
+	                       0 (181x)
+	                       6 (2x)
+	                       10 (2x)
+	                       50 (2x)
+
+ 21. "originLocation"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         53
+	Longest value:         35 characters
+	Most common values:    n.a. (8393x)
+	                       Baetica (9x)
+	                       Aegean (7x)
+	                       North Africa (4x)
+	                       Spain (4x)
+
+ 22. "destination"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         26
+	Longest value:         33 characters
+	Most common values:    n.a. (8432x)
+	                       Northern Italy (11x)
+	                       Rome (8x)
+	                       Rome? (3x)
+	                       France? (3x)
+
+ 23. "artifacts"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         10
+	Longest value:         33 characters
+	Most common values:    n.a. (8231x)
+	                       Amphorae (221x)
+	                       Marble, Blocks (6x)
+	                       Amphorae, Marble, Columns (5x)
+	                       Amphorae, Marble, Columns, Blocks (5x)
+
+ 24. "coastDist"
+
+	Type of data:          Number
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         7996
+	Smallest value:        0.111
+	Largest value:         894,516.236
+	Sum:                   486,150,027.735
+	Mean:                  57,322.253
+	Median:                11,850.328
+	StDev:                 110,065.208
+	Most decimal places:   14
+	Most common values:    154,029.256 (32x)
+	                       132,925.674 (18x)
+	                       162,043.612 (15x)
+	                       56,048.261 (14x)
+	                       132,564.916 (12x)
+
+ 25. "sourceInfo"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         4
+	Longest value:         36 characters
+	Most common values:    SHOM (4665x)
+	                       National Monuments Service (Ireland) (3443x)
+	                       The Oxford Roman Economy Project (321x)
+	                       Historic England (52x)
+
+ 26. "reference"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         1803
+	Longest value:         471 characters
+	Most common values:    n.a. (6090x)
+	                       UKHO (111x)
+	                       UKHO Wreck Data 1996. (62x)
+	                       GSI Wreck Data (61x)
+	                       UKHO. (37x)
+
+ 27. "website"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         120
+	Longest value:         124 characters
+	Most common values:    n.a. (8308x)
+	                       http://www.archeomar.it/templates/archeomar/atlante/player_atlante_en.html (33x)
+	                       http://www.archaeogate.org/subacquea/article/115/2/rinvenimenti-archeologici-subacquei-in-sardegna-sud-occ.htm (6x)
+	                       http://www.ienae.gr/e107EN/page.php? (4x)
+	                       http://www.archaeogate.org/subacquea/article/678/1/trovati-due-relitti-nei-fondali-del-golfo-dellasinara.htm (4x)
+
+ 28. "websiteAlt"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       8481
+	Unique values:         11
+	Longest value:         103 characters
+	Most common values:    n.a. (8470x)
+	                       http://www.archeomar.it/index.php?option=com_content&task=view&id=21&Itemid=35#relitt (2x)
+	                       http://www2.rgzm.de/navis/ships/Ship058/Ship058Engl.ht (1x)
+	                       http://www.reitia.it/nave_lapidaria_di_capo_bianco.html (1x)
+	                       http://ina.tamu.edu/pabucburnu/ (1x)
+
+Row count: 8481

@@ -1,6 +1,5 @@
 from tableschema import Table, infer, Schema
 from json_extract import GetValue2
-import glob
 import csv
 import json
 import os
@@ -20,7 +19,7 @@ for dataset in datasets:
     source_filename = dataset
 
     source_file = str(root_dir) + '/data/input/remapped/' + dataset
-    target_path = str(root_dir) + '/data/output/tableschemas'
+    target_path = str(root_dir) + '/data/profiles/tableschemas'
 
     stemName = Path(dataset).stem
     stemName = str.lower(stemName)

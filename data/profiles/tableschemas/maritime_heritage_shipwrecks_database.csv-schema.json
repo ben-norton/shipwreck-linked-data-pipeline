@@ -1,0 +1,157 @@
+{
+    "fields": [
+        {
+            "name": "vesselName",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "dateOfWreck",
+            "type": "date",
+            "format": "%Y-%m-%d"
+        },
+        {
+            "name": "event",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "locationOfwreck",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "tonnage",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "lengthInFeet",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "breadthInFeet",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "depthInFeet",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "masts",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "decks",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "hull",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "description",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "story",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "vesselType",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "typeOfEvent",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "natureOfEvent",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "causeOfEvent",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "cargo",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "livesLost",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "voyageFrom",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "voyageTo",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "remarks",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "builtAt",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "dateBuilt",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "officialNumber",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "registeredat",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "dateRegistered",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "propulsion",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "rig",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "details",
+            "type": "string",
+            "format": "default"
+        }
+    ],
+    "missingValues": [
+        ""
+    ]
+}
