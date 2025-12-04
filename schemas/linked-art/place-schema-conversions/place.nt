@@ -1,0 +1,97 @@
+_:n7970ddd14d2641259d1bfe9793fd7884b8 <http://www.w3.org/ns/shacl#name> "member_of" .
+_:n7970ddd14d2641259d1bfe9793fd7884b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "POINT(-78.6382 35.7796)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+_:n7970ddd14d2641259d1bfe9793fd7884b11 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2004/02/skos/core#exactMatch> .
+_:n7970ddd14d2641259d1bfe9793fd7884b13 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404626> .
+_:n7970ddd14d2641259d1bfe9793fd7884b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+_:n7970ddd14d2641259d1bfe9793fd7884b14 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Capital city of North Carolina, known as the City of Oaks"@en .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b9 .
+_:n7970ddd14d2641259d1bfe9793fd7884b12 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Raleigh" .
+<https://linked.art/example/place/united-states> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/raleigh-nc> <http://www.w3.org/2000/01/rdf-schema#label> "Raleigh, North Carolina" .
+<https://linked.art/example/place/north-carolina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+_:n7970ddd14d2641259d1bfe9793fd7884b5 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300008347> .
+_:n7970ddd14d2641259d1bfe9793fd7884b4 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> .
+_:n7970ddd14d2641259d1bfe9793fd7884b15 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "North Carolina" .
+_:n7970ddd14d2641259d1bfe9793fd7884b10 <http://www.w3.org/ns/shacl#name> "attributed_by" .
+_:n7970ddd14d2641259d1bfe9793fd7884b5 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> .
+_:n7970ddd14d2641259d1bfe9793fd7884b10 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment> .
+_:n7970ddd14d2641259d1bfe9793fd7884b3 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> .
+<https://linked.art/example/place/north-carolina> <http://www.w3.org/2000/01/rdf-schema#label> "North Carolina" .
+<https://linked.art/example/place/united-states> <http://www.w3.org/2000/01/rdf-schema#label> "United States of America" .
+_:n7970ddd14d2641259d1bfe9793fd7884b5 <http://www.w3.org/ns/shacl#name> "defined_by" .
+_:n7970ddd14d2641259d1bfe9793fd7884b8 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of> .
+_:n7970ddd14d2641259d1bfe9793fd7884b2 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> .
+_:n7970ddd14d2641259d1bfe9793fd7884b12 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404670> .
+_:n7970ddd14d2641259d1bfe9793fd7884b13 <http://www.w3.org/2000/01/rdf-schema#label> "GeoNames ID" .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> <https://linked.art/example/place/north-carolina> .
+_:n7970ddd14d2641259d1bfe9793fd7884b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+_:n7970ddd14d2641259d1bfe9793fd7884b15 <http://www.w3.org/2000/01/rdf-schema#label> "Primary Name" .
+_:n7970ddd14d2641259d1bfe9793fd7884b7 <http://www.w3.org/ns/shacl#path> <http://schema.org/image> .
+<https://linked.art/example/place/north-carolina> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> _:n7970ddd14d2641259d1bfe9793fd7884b15 .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b4 .
+<https://linked.art/example/place/wake-county-nc> <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> <https://linked.art/example/place/north-carolina> .
+<https://linked.art/example/place/wake-county-nc> <http://www.w3.org/2000/01/rdf-schema#label> "Wake County, North Carolina" .
+_:n7970ddd14d2641259d1bfe9793fd7884b17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+_:n7970ddd14d2641259d1bfe9793fd7884b9 <http://www.w3.org/ns/shacl#name> "subject_of" .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> _:n7970ddd14d2641259d1bfe9793fd7884b13 .
+_:n7970ddd14d2641259d1bfe9793fd7884b2 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<https://linked.art/example/place/north-carolina> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300000774> .
+_:n7970ddd14d2641259d1bfe9793fd7884b1 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:n7970ddd14d2641259d1bfe9793fd7884b11 <http://www.w3.org/ns/shacl#name> "equivalent" .
+<https://linked.art/example/place/united-states> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> _:n7970ddd14d2641259d1bfe9793fd7884b17 .
+_:n7970ddd14d2641259d1bfe9793fd7884b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+_:n7970ddd14d2641259d1bfe9793fd7884b4 <http://www.w3.org/ns/shacl#name> "referred_to_by" .
+_:n7970ddd14d2641259d1bfe9793fd7884b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> .
+_:n7970ddd14d2641259d1bfe9793fd7884b1 <http://www.w3.org/ns/shacl#name> "_label" .
+_:n7970ddd14d2641259d1bfe9793fd7884b8 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> <https://linked.art/example/place/wake-county-nc> .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/2000/01/rdf-schema#label> "Place Shape" .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b2 .
+_:n7970ddd14d2641259d1bfe9793fd7884b14 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300080091> .
+_:n7970ddd14d2641259d1bfe9793fd7884b9 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> .
+_:n7970ddd14d2641259d1bfe9793fd7884b3 <http://www.w3.org/ns/shacl#name> "identified_by" .
+<https://linked.art/example/place/raleigh-nc> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.geonames.org/4487042/> .
+_:n7970ddd14d2641259d1bfe9793fd7884b3 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+_:n7970ddd14d2641259d1bfe9793fd7884b1 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2000/01/rdf-schema#label> .
+_:n7970ddd14d2641259d1bfe9793fd7884b2 <http://www.w3.org/ns/shacl#name> "classified_as" .
+_:n7970ddd14d2641259d1bfe9793fd7884b6 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b6 .
+<https://linked.art/example/place/north-carolina> <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> <https://linked.art/example/place/united-states> .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by> _:n7970ddd14d2641259d1bfe9793fd7884b14 .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b5 .
+_:n7970ddd14d2641259d1bfe9793fd7884b6 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/united-states> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300128207> .
+_:n7970ddd14d2641259d1bfe9793fd7884b17 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "United States of America" .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b10 .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b11 .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographic locations where activities occur" .
+_:n7970ddd14d2641259d1bfe9793fd7884b7 <http://www.w3.org/ns/shacl#name> "representation" .
+_:n7970ddd14d2641259d1bfe9793fd7884b17 <http://www.w3.org/2000/01/rdf-schema#label> "Primary Name" .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b8 .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#targetClass> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/raleigh-nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+_:n7970ddd14d2641259d1bfe9793fd7884b4 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+_:n7970ddd14d2641259d1bfe9793fd7884b10 <http://www.w3.org/ns/shacl#path> <http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by> .
+_:n7970ddd14d2641259d1bfe9793fd7884b11 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+_:n7970ddd14d2641259d1bfe9793fd7884b12 <http://www.w3.org/2000/01/rdf-schema#label> "Primary Name" .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b3 .
+_:n7970ddd14d2641259d1bfe9793fd7884b16 <http://www.w3.org/2000/01/rdf-schema#label> "Primary Name" .
+_:n7970ddd14d2641259d1bfe9793fd7884b13 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "4487042" .
+_:n7970ddd14d2641259d1bfe9793fd7884b9 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+_:n7970ddd14d2641259d1bfe9793fd7884b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> .
+<https://linked.art/example/place/wake-county-nc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/wake-county-nc> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> _:n7970ddd14d2641259d1bfe9793fd7884b16 .
+<https://linked.art/example/place/raleigh-nc> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://sws.geonames.org/4487042/> .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b7 .
+<https://linked.art/example/place/wake-county-nc> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300000771> .
+_:n7970ddd14d2641259d1bfe9793fd7884b14 <http://www.w3.org/2000/01/rdf-schema#label> "Description" .
+_:n7970ddd14d2641259d1bfe9793fd7884b1 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://linked.art/example/place/raleigh-nc> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> _:n7970ddd14d2641259d1bfe9793fd7884b12 .
+<https://linked.art/api/1.0/PlaceShape> <http://www.w3.org/ns/shacl#property> _:n7970ddd14d2641259d1bfe9793fd7884b1 .
+_:n7970ddd14d2641259d1bfe9793fd7884b6 <http://www.w3.org/ns/shacl#name> "part_of" .
+_:n7970ddd14d2641259d1bfe9793fd7884b7 <http://www.w3.org/ns/shacl#class> <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> .
+_:n7970ddd14d2641259d1bfe9793fd7884b5 <http://www.w3.org/ns/shacl#description> "WKT or GeoJSON definition of the area" .
+_:n7970ddd14d2641259d1bfe9793fd7884b16 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Wake County" .

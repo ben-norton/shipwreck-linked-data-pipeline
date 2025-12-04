@@ -1,0 +1,132 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix la: <https://linked.art/api/1.0/> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# SHACL Shape for Place
+la:PlaceShape a sh:NodeShape ;
+    sh:targetClass crm:E53_Place ;
+    rdfs:label "Place Shape" ;
+    rdfs:comment "Geographic locations where activities occur" ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "_label" ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path crm:P2_has_type ;
+        sh:name "classified_as" ;
+        sh:class crm:E55_Type ;
+    ] ;
+    sh:property [
+        sh:path crm:P1_is_identified_by ;
+        sh:name "identified_by" ;
+        sh:class crm:E41_Appellation ;
+    ] ;
+    sh:property [
+        sh:path crm:P67i_is_referred_to_by ;
+        sh:name "referred_to_by" ;
+        sh:class crm:E33_Linguistic_Object ;
+    ] ;
+    sh:property [
+        sh:path crm:P168_place_is_defined_by ;
+        sh:name "defined_by" ;
+        sh:datatype xsd:string ;
+        sh:description "WKT or GeoJSON definition of the area" ;
+    ] ;
+    sh:property [
+        sh:path crm:P89_falls_within ;
+        sh:name "part_of" ;
+        sh:class crm:E53_Place ;
+    ] ;
+    sh:property [
+        sh:path schema:image ;
+        sh:name "representation" ;
+        sh:class crm:E36_Visual_Item ;
+    ] ;
+    sh:property [
+        sh:path crm:P107i_is_current_or_former_member_of ;
+        sh:name "member_of" ;
+        sh:class crm:E74_Group ;
+    ] ;
+    sh:property [
+        sh:path crm:P129i_is_subject_of ;
+        sh:name "subject_of" ;
+        sh:class crm:E33_Linguistic_Object ;
+    ] ;
+    sh:property [
+        sh:path crm:P140i_was_attributed_by ;
+        sh:name "attributed_by" ;
+        sh:class crm:E13_Attribute_Assignment ;
+    ] ;
+    sh:property [
+        sh:path skos:exactMatch ;
+        sh:name "equivalent" ;
+        sh:class crm:E53_Place ;
+    ] .
+
+# Example Place Instance
+<https://linked.art/example/place/raleigh-nc> a crm:E53_Place ;
+    rdfs:label "Raleigh, North Carolina" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300008347> ; # city
+    crm:P1_is_identified_by [
+        a crm:E41_Appellation , crm:E33_E41_Linguistic_Appellation ;
+        rdfs:label "Primary Name" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404670> ; # preferred terms
+        crm:P190_has_symbolic_content "Raleigh"
+    ] ;
+    crm:P1_is_identified_by [
+        a crm:E42_Identifier ;
+        rdfs:label "GeoNames ID" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300404626> ; # identification number
+        crm:P190_has_symbolic_content "4487042"
+    ] ;
+    crm:P67i_is_referred_to_by [
+        a crm:E33_Linguistic_Object ;
+        rdfs:label "Description" ;
+        crm:P2_has_type <http://vocab.getty.edu/aat/300080091> ; # description
+        crm:P190_has_symbolic_content "Capital city of North Carolina, known as the City of Oaks"@en
+    ] ;
+    crm:P168_place_is_defined_by "POINT(-78.6382 35.7796)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+    crm:P89_falls_within <https://linked.art/example/place/north-carolina> ;
+    crm:P89_falls_within <https://linked.art/example/place/wake-county-nc> ;
+    skos:exactMatch <http://www.geonames.org/4487042/> ;
+    skos:exactMatch <http://sws.geonames.org/4487042/> .
+
+# Parent Place - North Carolina
+<https://linked.art/example/place/north-carolina> a crm:E53_Place ;
+    rdfs:label "North Carolina" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300000774> ; # state
+    crm:P1_is_identified_by [
+        a crm:E41_Appellation ;
+        rdfs:label "Primary Name" ;
+        crm:P190_has_symbolic_content "North Carolina"
+    ] ;
+    crm:P89_falls_within <https://linked.art/example/place/united-states> .
+
+# Parent Place - Wake County
+<https://linked.art/example/place/wake-county-nc> a crm:E53_Place ;
+    rdfs:label "Wake County, North Carolina" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300000771> ; # county
+    crm:P1_is_identified_by [
+        a crm:E41_Appellation ;
+        rdfs:label "Primary Name" ;
+        crm:P190_has_symbolic_content "Wake County"
+    ] ;
+    crm:P89_falls_within <https://linked.art/example/place/north-carolina> .
+
+# Parent Place - United States
+<https://linked.art/example/place/united-states> a crm:E53_Place ;
+    rdfs:label "United States of America" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300128207> ; # nation
+    crm:P1_is_identified_by [
+        a crm:E41_Appellation ;
+        rdfs:label "Primary Name" ;
+        crm:P190_has_symbolic_content "United States of America"
+    ] .

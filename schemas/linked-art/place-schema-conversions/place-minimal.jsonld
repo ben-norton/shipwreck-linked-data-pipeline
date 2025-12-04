@@ -1,0 +1,50 @@
+[
+  {
+    "@id": "https://linked.art/example/place/north-carolina",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "North Carolina"
+      }
+    ]
+  },
+  {
+    "@id": "https://linked.art/example/place/raleigh-simple",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by": [
+      {
+        "@value": "POINT(-78.6382 35.7796)"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300008347"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://linked.art/example/place/north-carolina"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Raleigh, NC"
+      }
+    ]
+  },
+  {
+    "@id": "https://linked.art/example/place/museum",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "North Carolina Museum of Natural Sciences"
+      }
+    ]
+  }
+]

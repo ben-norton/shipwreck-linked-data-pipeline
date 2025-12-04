@@ -1,0 +1,30 @@
+# source-metadata.yml
+# rdf-etl-pipelines
+# sources/datasets
+# Metadata Template
+# 2025-12-03
+Dataset:
+  identifier: EMODnet_HA_Heritage_Shipwrecks_20220720
+  verbatimFilename: EMODnet_HA_Heritage_Shipwrecks_20220720.csv
+  filename: emodnet_ha_heritage_shipwrecks.csv
+  title: EMODnet Human Activities, Cultural Heritage, Ship wrecks
+  description: "The dataset combines data collected from several sources: data collected and processed by the “Service hydrographique et océanographique de la marine” (SHOM) under the product “Wrecks and obstructions” for France (Hexagone and outermost regions and territories), The National Monument Service Wreck Viewer for Ireland, Historic England and the University of Oxford - The Oxford Roman Economy Project (Strauss, J. (2013). Shipwrecks Database. Version 1.0. Accessed (date): oxrep.classics.ox.ac.uk/databases/shipwrecks_database/) for archeological remains of ship wrecks in the Mediterranean. The different products were developed with different purposes and therefore provide information of different nature. The product developed by SHOM aims to identify objects emerging from the seabed and likely to hinder navigation, while the three other products focus on the historical value of the wrecks. The choice was made to keep as much information as possible. When possible fields from different sources have been merged (e.g. least depth available in SHOM data and the Oxford Roman Economy Project), but other fields correspond to a specific source. When available, information is provided on the nature of the objects (object description, ship characteristics, object type, artefacts, estimated tonnage), on the aging of the wrecks (sink year, dating, period), on the circumstances of the sinking (sink context, place of origine, place of destination), on the location  (least depth, max depth, other depth information, object length, location precision, site area, coast distance), on the protection status (only for England) and on sources and additional information available (source information, references, website, website 2). The additional processing carried out by EMODnet consisted in translating the available information to English (through partly-automated translation), extracting the year of the sinking when available and calculating the distance to coast. Last update of the product by SHOM was made in November 2021, last update of the Historic England data was made in August 2021, update of the National Monument Service Wreck Viewer in Ireland was made I April 2018 and the Oxford Roman Economy Project was carried out in 2013."
+  landingPage: https://app.hubocean.earth/catalog/dataset/8aac1057-2e7a-4b8a-b874-380e42411f06
+  version: 2022-07-20
+  versionNotes: Version based on timestamp in metadata file
+  accessRights: None listed
+  license: None listed
+  publisher: AND-International
+  provenance:
+  modified: 2022-07-20
+  language: en
+  type: Static Dataset
+  documentation: https://ows.emodnet-humanactivities.eu/geonetwork/srv/eng/csw?service=CSW&version=2.0.2&request=GetRecordById&elementsetname=full&id=e965088b-a265-4517-84df-c49b156af8a7&outputschema=http://www.isotc211.org/2005/gmd
+  format: CSV
+  processing: Exported CSV from source Personal Geodatabase using QGIS, Columns remapped on export
+Distribution:
+  accessURL: https://ows.emodnet-humanactivities.eu/geonetwork/srv/api/records/e965088b-a265-4517-84df-c49b156af8a7/attachments/EMODnet_HA_Heritage_Shipwrecks_20220720.zip
+  mediaType: application/zip
+
+
+

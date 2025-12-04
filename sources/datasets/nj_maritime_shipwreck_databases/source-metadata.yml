@@ -1,0 +1,32 @@
+# source-metadata.yml
+# rdf-etl-pipelines
+# sources/datasets
+# Metadata Template
+# 2025-12-03
+Dataset:
+  identifier: ShipwreckDatabase120924SR
+  verbatimFilename: ShipwreckDatabase120924SR.csv
+  filename: nj_maritime_shipwreck_database.csv
+  title: NJ
+  description: This data base focuses on maritime events that occurred in the waters along the New Jersey coast, primarily the Atlantic Ocean, Delaware Bay and Delaware River.
+  landingPage: https://njmaritimemuseum.org/shipwreck-database/
+  version: Not applicable
+  versionNotes: Non-versioned
+  accessRights: None listed
+  license: None listed
+  publisher: NJ Maritime Museum
+  provenance:
+  modified:
+  accessed: 2025-12-03
+  language: en
+  type: Static Dataset
+  documentation:
+  format: CSV
+  processing: Revised filename to snake-case, column names remapped and renamed using camelcasing
+  relatedResource:
+Distribution:
+  accessURL: https://docs.google.com/spreadsheets/d/1ZrDjZtihzFl46-azdU4WuK77QEEwJvAt/edit?usp=sharing&ouid=102127612336196241007&rtpof=true&sd=trued/1wImDt9nEtBMlsLLpqeFp7gnMfk2997hQsR_g6oaOz58/edit?usp=sharing
+  mediaType: text/csv
+
+
+

@@ -1,0 +1,504 @@
+[
+  {
+    "@id": "https://linked.art/api/1.0/PlaceShape",
+    "@type": [
+      "http://www.w3.org/ns/shacl#NodeShape"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Geographic locations where activities occur"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Place Shape"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#property": [
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b1"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b2"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b3"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b4"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b5"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b6"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b7"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b8"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b9"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b10"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b11"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#targetClass": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b1",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#minCount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "_label"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b2",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "classified_as"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b3",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "identified_by"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b4",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "referred_to_by"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b5",
+    "http://www.w3.org/ns/shacl#datatype": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#description": [
+      {
+        "@value": "WKT or GeoJSON definition of the area"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "defined_by"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b6",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "part_of"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b7",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "representation"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://schema.org/image"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b8",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E74_Group"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "member_of"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b9",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "subject_of"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b10",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "attributed_by"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b11",
+    "http://www.w3.org/ns/shacl#class": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#name": [
+      {
+        "@value": "equivalent"
+      }
+    ],
+    "http://www.w3.org/ns/shacl#path": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#exactMatch"
+      }
+    ]
+  },
+  {
+    "@id": "https://linked.art/example/place/wake-county-nc",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b16"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300000771"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://linked.art/example/place/north-carolina"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Wake County, North Carolina"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b16",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Wake County"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Primary Name"
+      }
+    ]
+  },
+  {
+    "@id": "https://linked.art/example/place/united-states",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b17"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300128207"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "United States of America"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b17",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "United States of America"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Primary Name"
+      }
+    ]
+  },
+  {
+    "@id": "https://linked.art/example/place/raleigh-nc",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by": [
+      {
+        "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "@value": "POINT(-78.6382 35.7796)"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b12"
+      },
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b13"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300008347"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by": [
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b14"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://linked.art/example/place/north-carolina"
+      },
+      {
+        "@id": "https://linked.art/example/place/wake-county-nc"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Raleigh, North Carolina"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.geonames.org/4487042/"
+      },
+      {
+        "@id": "http://sws.geonames.org/4487042/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b12",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
+      "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "Raleigh"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300404670"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Primary Name"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b13",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "4487042"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300404626"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GeoNames ID"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b14",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@language": "en",
+        "@value": "Capital city of North Carolina, known as the City of Oaks"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300080091"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Description"
+      }
+    ]
+  },
+  {
+    "@id": "https://linked.art/example/place/north-carolina",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by": [
+      {
+        "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b15"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P2_has_type": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300000774"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://linked.art/example/place/united-states"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "North Carolina"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7970ddd14d2641259d1bfe9793fd7884b15",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content": [
+      {
+        "@value": "North Carolina"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Primary Name"
+      }
+    ]
+  }
+]

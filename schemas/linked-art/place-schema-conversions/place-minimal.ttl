@@ -1,0 +1,18 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Minimal Place Example - Only Required Fields
+<https://linked.art/example/place/museum> a crm:E53_Place ;
+    rdfs:label "North Carolina Museum of Natural Sciences" .
+
+# Simple Place with Basic Properties
+<https://linked.art/example/place/raleigh-simple> a crm:E53_Place ;
+    rdfs:label "Raleigh, NC" ;
+    crm:P2_has_type <http://vocab.getty.edu/aat/300008347> ; # city
+    crm:P168_place_is_defined_by "POINT(-78.6382 35.7796)" ;
+    crm:P89_falls_within <https://linked.art/example/place/north-carolina> .
+
+<https://linked.art/example/place/north-carolina> a crm:E53_Place ;
+    rdfs:label "North Carolina" .

@@ -1,0 +1,1380 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="http://www.sealitproject.eu/ontology/"
+     xml:base="http://www.sealitproject.eu/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <owl:Ontology rdf:about="http://www.sealitproject.eu/ontology/">
+	<rdfs:label xml:lang="en">SeaLiT Ontology</rdfs:label>
+	<rdfs:comment xml:lang="en">The SeaLiT Ontology is a formal ontology intended to facilitate the integration, mediation and interchange of heterogeneous information related to maritime history. It aims at providing the semantic definitions needed to transform disparate, localised information sources of maritime history into a coherent global resource. It also serves as a common language for domain experts and IT developers to formulate requirements and to agree on system functionalities with respect to the correct handling of historical information. The ontology uses and extends the CIDOC Conceptual Reference Model (ISO 21127:2014), in particular version 7.2.1, as a general ontology of human activity, things and events happening in space and time.</rdfs:comment>
+	<owl:versionInfo xml:lang="en">SeaLiT Ontology 1.2</owl:versionInfo>
+	<owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/" />
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ammunition">
+    <rdfs:label xml:lang="en">Ammunition</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the kinds and the number of guns of the ship at the moment of registration. The current documentation is mostly about merchant ships. With the beginning of the Greek Revolution in 1821, the Greek merchant fleet was transformed to military – consequently, there are also references to vessels that have ammunition during that period.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Arrival">
+    <rdfs:label xml:lang="en">Arrival</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises the arrival activity of a ship, which is a part, a stage of the overall voyage. It includes information about a place where the ship lands within a specific timeframe. It describes end points of the partial routes or within the overall voyage.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Civil_Registration">
+    <rdfs:label xml:lang="en">Civil Registration</rdfs:label>
+    <rdfs:comment xml:lang="en">Civil registration stands for legal processes of registering persons in various contexts. The outcomes of this process are legal documents such as civil acts of birth or death, or other documents (such as Register of Entries in shipyards), which usually have a period of validity.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Country">
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdfs:comment xml:lang="en">This class describes the country, a place identified as a distinct entity in political geography.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Course">
+    <rdfs:label xml:lang="en">Course</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about courses, teaching units divided and organized for educational purposes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Crew_Payment">
+    <rdfs:label xml:lang="en">Crew Payment</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the wage payments of the people that are members of the crew of a ship.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/De-flagging">
+    <rdfs:label xml:lang="en">De-flagging</rdfs:label>
+    <rdfs:comment xml:lang="en">De-flagging is regarded in this context as synonym to ship de-registration. When a ship is no longer flagged, this means that for a reason (e.g., demolished, shipwreck, lost, sold, etc.) the ship does not anymore sail under a legal state (of registration, having a flag).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Discharge">
+    <rdfs:label xml:lang="en">Discharge</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises the termination of a working relationship, the ending of an employee to provide service. In the context of the SeaLiT project, which explores data regarding employments records with lists of maritime personnel, a discharge is specifically defined in the sense of disembarkation, which is the activity that usually terminates a sailor’s employment service.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Duration">
+    <rdfs:label xml:lang="en">Duration</rdfs:label>
+    <rdfs:comment xml:lang="en">This class expresses the length of time in terms of indeterminacy of the duration value that can be approximated. A duration may be expressed using all the parts of a date-time (from years to seconds) and can therefore be defined as a six-dimensional space. Because the relation between some of date parts is not fixed (such as the number of days in a month), the order relationship between durations is only partial, and the result of a comparison between two durations may be undetermined. The same value may consists of different parts, such as 4 years, 10 months and 2 days.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Employment">
+    <rdfs:label xml:lang="en">Employment</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about employment services between two parties, usually based on a contract where work is paid for. In the context of the SeaLiT project, it comprises information about the employment services provided on board. This relationship is initiated by the recruitment of the sailor man and is terminated by the discharge/disembarkation of this worker.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Service"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Horsepower">
+    <rdfs:label xml:lang="en">Horsepower</rdfs:label>
+    <rdfs:comment xml:lang="en">The power of the ship’s marine propulsion engine. The overall operation of the ship is highly dependent on the performance of its main propulsion engine, measured in terms of its power rating. There are various types of horsepower such as Nominal horsepower (NHP), Shaft horsepower (SHP), Indicated horsepower (IHP).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Labour_Contract">
+    <rdfs:label xml:lang="en">Labour Contract</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises plans expressed in a document that specifies the employment conditions.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Language_Capacity">
+    <rdfs:label xml:lang="en">Language Capacity</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises concepts denoting a person knowledge of various languages.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Leaving">
+    <rdfs:label xml:lang="en">Leaving</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises the leaving of a ship, which is a part, a stage of the overall voyage. It includes information about a place from which the ship leaves within a specific timeframe. It describes start points of the partial routes or with the overall voyage.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Legal_Document_with_Temporal_Validity">
+    <rdfs:label xml:lang="en">Legal Document with Temporal Validity</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises official documents or legal agreements that are valid for a specific timespan. The concept of this class includes licenses, official permissions, authorizations, etc., having a temporal validity.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Legal_Object_Relationship">
+    <rdfs:label xml:lang="en">Legal Object Relationship</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises legal object relationships of which the timespan and the state (of these relationships) cannot be observed or documented. We can only observe these relationships through the events that initialize or terminate this state of relationship (starting event and terminating event). Basically, it comprises of characteristics/properties of a legal relationship which is the kind of information that can be inferred/asserted and not by temporal documentation of these properties.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Literacy_Status">
+    <rdfs:label xml:lang="en">Literacy Status</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises concepts denoting a person’s literacy status.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Loading">
+    <rdfs:label xml:lang="en">Loading</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises loading activities as they are documented during the voyages (or as parts of the routes) of the ships. It seems that the definition of a ship includes the notion of the loading of things; the procedures of loading/unloading are very important; the types of ships, the ports and the routes seem to define the types of loading, the dimensions, and the technology of loading/unloading and storage in ships.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Money_for_Labour">
+    <rdfs:label xml:lang="en">Money for Labour</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises activities in which actors pay/receive money for services related to labour, human work, in order to earn wage.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Money_for_Service">
+    <rdfs:label xml:lang="en">Money for Service</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises transaction activities in which actors pay/receive money for services.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Money_for_Things">
+    <rdfs:label xml:lang="en">Money for Things</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises transaction activities in which actors pay/receive money for services related to things, such as purchase of foods, etc.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Navigation_Type">
+    <rdfs:label xml:lang="en">Navigation Type</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises concepts denoted by terms used to characterize and classify a ship, in particular its navigation type, based on the long or short distances of travel.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Passing">
+    <rdfs:label xml:lang="en">Passing</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises passing by (or through) activities of a ship at sea. This information helps to track the ships and the routes. Passing by or through is a part of the overall voyage. It includes information about places by/through which the ship passes within a specific timeframe.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Port_of_Registry">
+    <rdfs:label xml:lang="en">Port of Registry</rdfs:label>
+    <rdfs:comment xml:lang="en">This class describes the port (the issuing authority) that is responsible for a vessel registration.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Profession">
+    <rdfs:label xml:lang="en">Profession</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the person profession, work, career or job, as it was written inside the original source.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Promotion">
+    <rdfs:label xml:lang="en">Promotion</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises activities that result in the promotion, the advancement of an employee within a company position or job tasks or in a higher ranking as a reward for good performance. It is typically associated with a higher rate or a financial bonus.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Punishment">
+    <rdfs:label xml:lang="en">Punishment</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises instances of punishments in terms of public policy, defined by an authority, as a response to a particular action that is deemed undesirable or unacceptable. Examples of penalties for punishment are prison, or loss of a privilege or of a status, etc.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Recruitment">
+    <rdfs:label xml:lang="en">Recruitment</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises the process of hiring and bringing new staff member to work for a company, or to become a new member of an organization. In the context of the SeaLiT project, which explores data regarding employments records with lists of maritime personnel, a recruitment is specifically defined in the sense of on board employment. Recruitment or embarkation is the activity that usually starts a sailor’s employment service. There is information from sources, such as from the Maritime Register of the State for La Ciotat (matricule des maîtres au cabotage) , referring that they used to have “recruitment” systems that registered every man 18 years old and up, or a younger boy (as apprentice), exercising one of the maritime professions for over a year, at the Navy’s disposal, in case of a war. On the same time, the state provided many privileges in return for service in the navy, such as tax exemptions, military pensions, free education and life insurance for the families of listed seamen.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Religion_Status">
+    <rdfs:label xml:lang="en">Religion Status</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises concepts used to characterize the religious affiliation of a person.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Section">
+    <rdfs:label xml:lang="en">Section</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about sections of lessons. Some courses are divided into multiple sections.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Service">
+    <rdfs:label xml:lang="en">Service</rdfs:label>
+    <rdfs:comment xml:lang="en">Service is the willing, the capability to offer a service, by some instance of E39 Actor, independently if it is executed or not. This offer is declared at the request of another instance of E39 Actor.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Sex_Type">
+    <rdfs:label xml:lang="en">Sex Type</rdfs:label>
+    <rdfs:comment xml:lang="en">The gender of a person.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Shareholding">
+    <rdfs:label xml:lang="en">Shareholding</rdfs:label>
+    <rdfs:comment xml:lang="en">This class describes the common phenomenon through periods in which ships share ownership. Therefore, if for example a person is allowed to possess up to 1/48 of a ship, it means that a single person could have many ships shares in the same time. Sometimes the leading owner has the absolute majority of the shares, sometimes only the relative majority; these are just assumptions/examples that this class can describe.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship">
+    <rdfs:label xml:lang="en">Ship</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises vessels, ships of different kinds, which can cross large open waters. Ships have been important contributors to human migration and commerce.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship_Construction">
+    <rdfs:label xml:lang="en">Ship Construction</rdfs:label>
+    <rdfs:comment xml:lang="en">This class describes the activity of building new ships and other floating vessels. The ship construction information, in particular the location and date of construction, is the most reliable information (extracted from the source) that helps to identify a ship. A very important methodological question is what information can be used to define the unique identity of a ship. The answer is that there does not exist a single information that can define it: it is always a matter of comparison of the sources and information. Even though, there is information that is critical to the identity of a ship, such as the place and the year of construction.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E12_Production"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship_ID">
+    <rdfs:label xml:lang="en">Ship ID</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises numeric information assigned as registration number of a ship.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship_Name">
+    <rdfs:label xml:lang="en">Ship Name</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises the name that identifies a ship. The name of the ship can be changed because of an ownership (so a ship can have many names through time).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase">
+    <rdfs:label xml:lang="en">Ship Ownership Phase</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the ownership state of a ship. It consists of characteristics or properties of ownership. Ownership is a legal agreement, a kind of information that can be inferred/asserted and cannot be directly observed. Ownership usually characterizes/assigns a name to a ship and a ship changes its name under an ownership state. Ownership phase can be traced by the ship registration activity that initiates it, and by the de-flagging activity that terminates the phase. A single ship can have many owners (persons or/and companies).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship_Registration">
+    <rdfs:label xml:lang="en">Ship Registration</rdfs:label>
+    <rdfs:comment xml:lang="en">A ship acquires legal identity with the process of its registration, the register of its name, flag, id, dimensions and horsepower. The ownership information is documented in the registry book signed by the Port of Registry.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Ship_Repair">
+    <rdfs:label xml:lang="en">Ship Repair</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises activities that alter or change or restore/repair a ship.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E11_Modification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Social_Status">
+    <rdfs:label xml:lang="en">Social Status</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises a person’s social status, as it was written inside the original source. This can include different kinds of social status, such as marital status or estate. In such cases of further classification, these concepts can be used as instances of the Social Status class. This class extends E55 Type in order to refine the meaning of this specific concept (social status). This concept is sufficiently stable and associated with additional explicitly modelled property specific to it ( “has social status” ). An alternative mechanism is to specialize the classification of Social Status instances to any level of detail, by linking to external vocabulary sources, thesauri, classification schemas or ontologies. In general, a good practice for concepts that are not user defined metaclasses, would be to be treated as particulars with the relationship P2 has type.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Subject">
+    <rdfs:label xml:lang="en">Subject</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the scientific subjects of the courses that were taught at a specific semester.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Teaching_Unit">
+    <rdfs:label xml:lang="en">Teaching Unit</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the school year, the period of time during which the school holds classes and offers courses. It is a period of educational activities.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Tonnage">
+    <rdfs:label xml:lang="en">Tonnage</rdfs:label>
+    <rdfs:comment xml:lang="en">Tonnage is a measure of the cargo-carrying capacity of a ship. The sources refer to different kinds of tonnage, such as gross tonnage, net tonnage, etc. and through time, tonnage types may change. Tonnage may change during a reconstruction phase of a ship, for example.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Unloading">
+    <rdfs:label xml:lang="en">Unloading</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises unloading activities as they are documented during the voyages (or as parts of the routes) of the ships. The procedures of loading/unloading are very important; the types of ships, the ports and the routes seem to define the types of loading, the dimensions, and the technology of loading/unloading and storage in ships.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/Voyage">
+    <rdfs:label xml:lang="en">Voyage</rdfs:label>
+    <rdfs:comment xml:lang="en">This class comprises information about the voyages of ships. Voyage is defined as the process of travelling from one place to another, staying there, usually for a short time; it is not a simple move/change from place to place; it is a movement in space and time (and it is documented as that [1] ). The same ship can sail many voyages during its lifetime. Voyage and route information is very important for historically investigating the various trade routes and navigation patterns used to exist in different times. Voyage is an important aspect of the ship and the seaman, and generally of the seafaring life, both at sea and ashore .</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </owl:Class>
+  
+  
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ID_of">
+    <rdfs:label xml:lang="en">ID of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/with_ID"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Civil_Registration"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/arrival_is_part_of">
+    <rdfs:label xml:lang="en">arrival is part of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Arrival"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/consists_of_arrival"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/at_place">
+    <rdfs:label xml:lang="en">at place</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the spatial location of an arrival.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Arrival"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_place_of_arrival"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/by_place">
+    <rdfs:label xml:lang="en">by place</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a place with an instance of a passing activity by that place. This class provides information about the types of movements of a ship, which are parts of the route (of the voyage), and are documented as that.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Passing"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_place_of_passing_by"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/concerned">
+    <rdfs:label xml:lang="en">concerned</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the person that was promoted by a promotion activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Promotion"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_promoted_by"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/consists_of_arrival">
+    <rdfs:label xml:lang="en">consists of arrival</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows an instance of a Voyage to be analysed into parts such as arrival activities. It is a subproperty of P9 consists of (forms part of). This analysis of parts of the voyage contributes to the route analysis, which provides information about specific navigation patterns of the ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/arrival_is_part_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Arrival"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/consists_of_leaving">
+    <rdfs:label xml:lang="en">consists of leaving</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows an instance of a Voyage to be analysed into parts such as leaving activities. It is a subproperty of P9 consists of (forms part of). This analysis of parts of the voyage contributes to the route analysis, which provides information about specific navigation patterns of the ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/leaving_is_part_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Leaving"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/consists_of_loading">
+    <rdfs:label xml:lang="en">consists of loading</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows an instance of a Voyage to be analysed into parts such as loading activities. It is a subproperty of P9 consists of (forms part of). The activities of loading/unloading happen ashore, before, in between, or after (with the end) of the voyage of a ship and are part of its definition.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/loading_is_part_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Loading"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/consists_of_passing">
+    <rdfs:label xml:lang="en">consists of passing</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows an instance of a Voyage to be analysed into parts such as passing by/through activities. It is a subproperty of P9 consists of (forms part of). This analysis of parts of the voyage contributes to the route analysis, which provides information about specific navigation patterns of the ship</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/passing_is_part_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Passing"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/consists_of_unloading">
+    <rdfs:label xml:lang="en">consists of unloading</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows an instance of a Voyage to be analysed into parts such as unloading activities. It is a subproperty of P9 consists of (forms part of). The activities of loading/unloading happen ashore, before, in between, or after (with the end) of the voyage of a ship and are part of its definition.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/unloading_is_part_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Unloading"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9_consists_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/constructed">
+    <rdfs:label xml:lang="en">constructed</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies a ship that came into existence as a result of a construction event.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Construction"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_constructed_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P108_has_produced"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/de-flagged_in">
+    <rdfs:label xml:lang="en">de-flagged in</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/de-flagging_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/De-flagging"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/de-flagging_of">
+    <rdfs:label xml:lang="en">de-flagging of</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a ship with the instance of the de-flagging activity that de-registered it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/De-flagging"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/de-flagged_in"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/destination">
+    <rdfs:label xml:lang="en">destination</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the intended place where the voyage, theoretically, according to the maps and the plans should end. It is the planned destination of the route, which may change in reality.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_destination_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/duration_of">
+    <rdfs:label xml:lang="en">duration of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Duration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/had_duration"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P191i_was_duration_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/employment_of">
+    <rdfs:label xml:lang="en">employment of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/for_employment"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/service_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/employment_position_type_was_promoted_by">
+    <rdfs:label xml:lang="en">employment position type was promoted by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Profession"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/promoted_into_employment_position_type"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Promotion"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/employment_provided_by">
+    <rdfs:label xml:lang="en">employment provided by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the employment service provided by an E39 Actor.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/provided_employment"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/service_provided_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ended">
+    <rdfs:label xml:lang="en">ended</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes an employment that was ended/terminated by a discharge activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Discharge"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ended_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P184_ends_before_or_with_the_end_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ended_by">
+    <rdfs:label xml:lang="en">ended by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ended"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Discharge"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P184i_ends_with_or_after_the_end_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/finally_arriving_at">
+    <rdfs:label xml:lang="en">finally arriving at</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the final place (end) of a voyage. It is the actual arrival place, meaning it does not refer to the original destination place but the place to which the ship finally arrived.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_arrival_place_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/for_employment">
+    <rdfs:label xml:lang="en">for employment</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a payment with an instance of an employment that was used in order to specify rights and responsibilities between the “employee” and the “employer”.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/employment_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/for_service"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/for_employment_period">
+    <rdfs:label xml:lang="en">for employment period</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the total timespan (full employment period) of the Money for Labour activity and it is a shortcut of the most detailed path: Money for Labour – for employment: Employment – P4 has timespan: E52 Time-Span (timespan of recruitment and discharge) . The time-span can be also specified through a Duration instance, using the property had duration (duration of).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_employment_period_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/for_service">
+    <rdfs:label xml:lang="en">for service</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes a Money for Service activity that pays/receives money for Services.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/service_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Service"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/for_thing">
+    <rdfs:label xml:lang="en">for thing</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes a Money for Things activity that pays/receives money for physical things.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Things"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/thing_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/for_voyage">
+    <rdfs:label xml:lang="en">for voyage</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the voyage that sets the preconditions (motivates, determines, fixes) a crew payment. There is a dependency relationship between them; a new voyage sets the preconditions for a new crew payment activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Crew_Payment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/motivated_payment"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/formerly_or_currently_possesses">
+    <rdfs:label xml:lang="en">formerly or currently possesses</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a Legal Document with Temporal Validity with the instance of an Actor that formerly or currently possesses it, at the time of validity of the record or database containing the statement that uses this property. The property does not allow any indication of how long the legal document with temporal validity has been possessed by the specific Actor.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_formerly_or_currently_possessed_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Legal_Document_with_Temporal_Validity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/from_place">
+    <rdfs:label xml:lang="en">from place</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the spatial location from which leaving (of ship) was documented. The description of this type of movement provides information about the route analysis.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Leaving"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_place_of_leaving"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/had_duration">
+    <rdfs:label xml:lang="en">had duration</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the length of time covered by an E52 Time-Span. It allows an E52 Time-Span to be associated with a duration (as a dimension, an interval) independent from the actual beginning and end.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/duration_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Duration"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P191_had_duration"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/had_flag_of">
+    <rdfs:label xml:lang="en">had flag of</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a Ship with an instance of the country of which this ship becomes property and consequently acquires this country’s flag. The property is a shortcut of the full path Ship – is registered by: Ship Registration – with ship flag of: Country.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_flag_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Country"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/had_money_value">
+    <rdfs:label xml:lang="en">had money value</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the Monetary Amount paid (i.e., the cost) for a specific Money for Service activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_price_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/had_student">
+    <rdfs:label xml:lang="en">had student</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates instances of E39 Actor with the instances of Teaching Unit in which they participated in the role of students. The property of the property status of participation allows specifying the nature of an Actor’s participation in a course/teaching unit. For example, it can be the student’s exam status or paying/scholarship status in a course.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/student_in"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_ammunition">
+    <rdfs:label xml:lang="en">has ammunition</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a ship with the ammunition that it is equipped with.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_ammunition_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ammunition"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_been_agreed_in">
+    <rdfs:label xml:lang="en">has been agreed in</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a money for labour with an instance of a Labour Contract document that is agreed and planned for this payment.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_agreement_for"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Labour_Contract"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/has_crew_number_capacity">
+    <rdfs:label xml:lang="en">has crew number capacity</rdfs:label>
+    <rdfs:comment xml:lang="en">This property specifies the numbers of workers/sailors authorized to work on board.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/has_current_age">
+    <rdfs:label xml:lang="en">has current age</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the current age of a person at a specific time (the time of the information recording).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/has_duration_value">
+    <rdfs:label xml:lang="en">has duration value</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows an instance of Duration to be approximated by an instance of E60 Number primitive that provides the duration value of a time-span. The value can be expressed in multiple units (such as “2 months and 5 days” or “3 years and 10 months” ), thus it is proposed to be implemented in RDFS following ISO 8601 [2] and xsd:duration [3] (form: PnYnMnDTnHnMnS).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Duration"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P90_has_value"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/has_first_name">
+    <rdfs:label xml:lang="en">has first name</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of E21 Person with an instance of E62 String used as the person’s first name. This property is an alternative (more convenient) implementation of P1 is identified by: E41 Appellation – P2 has type: “first name”; P190 has symbolic content: E62 String . The use of the P1 is identified by: E41 Appellation is required if there is the need to assign some additional properties to the first name, such as properties of use or attribution.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_horsepower">
+    <rdfs:label xml:lang="en">has horsepower</rdfs:label>
+    <rdfs:comment xml:lang="en">This property records the horsepower dimension of a ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_horsepower_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Horsepower"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_language_capacity">
+    <rdfs:label xml:lang="en">has language capacity</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes concepts that represent language capacity/knowledge that characterizes a E21 Person at a specific time period that is maybe unknown.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_language_capacity_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Language_Capacity"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/has_last_name">
+    <rdfs:label xml:lang="en">has last name</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of E21 Person with an instance of E62 String used as the person’s last name. This property is an alternative (more convenient) implementation of P1 is identified by: E41 Appellation – P2 has type: “last name”; P190 has symbolic content: E62 String . The use of the P1 is identified by: E41 Appellation is required if there is the need to assign some additional properties to the last name, such as type, properties of use or attribution. In some countries (e.g., Spain), each person has two last names. In such cases, the value assigned to E62 String can contain both last names, if a clear distinction is not required.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_literacy_status">
+    <rdfs:label xml:lang="en">has literacy status</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the literacy status of a person at a specific time period that is maybe unknown.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_literacy_status_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Literacy_Status"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_navigation_type">
+    <rdfs:label xml:lang="en">has navigation type</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the navigation type of the ship. It allows a form of specialisation through the use of a terminological hierarchy, or thesaurus.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_navigation_type_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Navigation_Type"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_owner">
+    <rdfs:label xml:lang="en">has owner</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes information about the owner, the person or the company (shipping enterprise), of a ship. In the context of the SeaLiT project, we make the hypothesis that the owner as a concept, implies a legal entity, so in that sense, a person is the minimum legal entity-company (with members himself/herself) of a ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_owner_of_phase"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_ownership_phase">
+    <rdfs:label xml:lang="en">has ownership phase</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_ownership_phase_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_profession">
+    <rdfs:label xml:lang="en">has profession</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a person with the profession, job or career that has been practicing at a specific time period that is maybe unknown. The evolution in the career/profession of a person is an important historical question; it implies the person development and evolution (microhistory) and consequently the population evolution (macrohistory).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/profession_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Profession"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_religion_status">
+    <rdfs:label xml:lang="en">has religion status</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the religion status of a person at a specific time period that is maybe unknown.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_religion_status_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Religion_Status"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_sex_type">
+    <rdfs:label xml:lang="en">has sex type</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a person with the sex type that this person has at a specific time period that is maybe unknown.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_sex_type_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Sex_Type"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_shareholder">
+    <rdfs:label xml:lang="en">has shareholder</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an actor with the activity of participating in an ownership with shares. It implies that a phase of a shareholding represents one participation of a share by an actor. This means that if for a ship there are more than one shareholders, there will be consequently same number of shareholding phases. If we want to describe the sum of the shares of the shareholding for a ship in a specific timespan, then we will describe a composite shareholding activity that consists of individual shareholding activities of shares.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Shareholding"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/participates_with_share"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/has_owner"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_shareholding">
+    <rdfs:label xml:lang="en">has shareholding</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_shareholding_phase_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Shareholding"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/has_ownership_phase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_ship_ID">
+    <rdfs:label xml:lang="en">has ship ID</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the identification of a ship by an identifier. This property does not reveal anything about when, where and by whom this identifier was used. A more detailed representation can be made using the fully developed path through Ship Registration. The property is a shortcut for the path Ship – is registered by: Ship Registration – with ship ID: Ship ID .</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ship_ID_identifies"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_ID"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_social_status">
+    <rdfs:label xml:lang="en">has social status</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the social status of a person at a specific time period that is maybe unknown.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_social_status_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_subject">
+    <rdfs:label xml:lang="en">has subject</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the subject of a teaching unit.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_subject_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Subject"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2_has_type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/has_tonnage">
+    <rdfs:label xml:lang="en">has tonnage</rdfs:label>
+    <rdfs:comment xml:lang="en">This property provides the tonnage dimension of a ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_tonnage_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Tonnage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/in_time">
+    <rdfs:label xml:lang="en">in time</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the inferred time-span of a legal object relationship, which cannot be observed or documented. It is implicit knowledge.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_time_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/initializes">
+    <rdfs:label xml:lang="en">initializes</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_initialized_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/initializes_ownership">
+    <rdfs:label xml:lang="en">initializes ownership</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ownership_is_initialized_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/initializes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_agreement_for">
+    <rdfs:label xml:lang="en">is agreement for</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Labour_Contract"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_been_agreed_in"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_ammunition_of">
+    <rdfs:label xml:lang="en">is ammunition of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ammunition"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_ammunition"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_arrival_place_of">
+    <rdfs:label xml:lang="en">is arrival place of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/finally_arriving_at"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_destination_of">
+    <rdfs:label xml:lang="en">is destination of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/destination"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_employment_period_of">
+    <rdfs:label xml:lang="en">is employment period of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/for_employment_period"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Labour"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_flag_of">
+    <rdfs:label xml:lang="en">is flag of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Country"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/with_ship_flag_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_formerly_or_currently_possessed_by">
+    <rdfs:label xml:lang="en">is formerly or currently possessed by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Legal_Document_with_Temporal_Validity"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/formerly_or_currently_possesses"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_given_to">
+    <rdfs:label xml:lang="en">is given to</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a punishment to the actor that received the punishment.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Punishment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_punished_by"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_horsepower_of">
+    <rdfs:label xml:lang="en">is horsepower of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Horsepower"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_horsepower"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43i_is_dimension_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_initialized_by">
+    <rdfs:label xml:lang="en">is initialized by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates the beginning of an instance of Legal Object Relationship with an explicit event initiating it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/initializes"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_language_capacity_of">
+    <rdfs:label xml:lang="en">is language capacity of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Language_Capacity"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_language_capacity"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_literacy_status_of">
+    <rdfs:label xml:lang="en">is literacy status of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Literacy_Status"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_literacy_status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_navigation_type_of">
+    <rdfs:label xml:lang="en">is navigation type of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Navigation_Type"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_navigation_type"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_owner_of_phase">
+    <rdfs:label xml:lang="en">is owner of phase</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_owner"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_ownership_phase_of">
+    <rdfs:label xml:lang="en">is ownership phase of</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a ship with the different ownership phases related to it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_ownership_phase"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_place_of_arrival">
+    <rdfs:label xml:lang="en">is place of arrival</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/at_place"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Arrival"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_place_of_leaving">
+    <rdfs:label xml:lang="en">is place of leaving</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/from_place"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Leaving"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_place_of_passing_by">
+    <rdfs:label xml:lang="en">is place of passing by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/by_place"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Passing"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_place_of_passing_through">
+    <rdfs:label xml:lang="en">is place of passing through</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/through_place"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Passing"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7i_witnessed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_registered_by">
+    <rdfs:label xml:lang="en">is registered by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/registers"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_religion_status_of">
+    <rdfs:label xml:lang="en">is religion status of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Religion_Status"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_religion_status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_responsible_for_registration">
+    <rdfs:label xml:lang="en">is responsible for registration</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Port_of_Registry"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/registered_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_sex_type_of">
+    <rdfs:label xml:lang="en">is sex type of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Sex_Type"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_sex_type"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_shareholding_phase_of">
+    <rdfs:label xml:lang="en">is shareholding phase of</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a shareholding phase to a particular ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Shareholding"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_shareholding"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/is_ownership_phase_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_social_status_of">
+    <rdfs:label xml:lang="en">is social status of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Social_Status"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_social_status"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_starting_place_of">
+    <rdfs:label xml:lang="en">is starting place of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/starting_from"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_subject_of">
+    <rdfs:label xml:lang="en">is subject of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Subject"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_subject"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_terminated_by">
+    <rdfs:label xml:lang="en">is terminated by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates the end of existence of an instance of Legal Object Relationship with an explicit event that terminates it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/terminates"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_time_of">
+    <rdfs:label xml:lang="en">is time of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/in_time"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_tonnage_of">
+    <rdfs:label xml:lang="en">is tonnage of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Tonnage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_tonnage"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P43i_is_dimension_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/is_working_place_of">
+    <rdfs:label xml:lang="en">is working place of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/works_at"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P107_has_current_or_former_member"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/leaving_is_part_of">
+    <rdfs:label xml:lang="en">leaving is part of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Leaving"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/consists_of_leaving"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/loaded">
+    <rdfs:label xml:lang="en">loaded</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance E18 Physical Thing with an instance of the loading activity that moved (loaded) it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Loading"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_loaded_by"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/loading_is_part_of">
+    <rdfs:label xml:lang="en">loading is part of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Loading"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/consists_of_loading"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/money_provided_by">
+    <rdfs:label xml:lang="en">money provided by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the E39 Actor that paid (gave money) for a specific service (Money For Service).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/provided_money"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/money_provided_to">
+    <rdfs:label xml:lang="en">money provided to</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the E39 Actor that received money for a specific service (Money For Service).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/received_money"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/motivated_payment">
+    <rdfs:label xml:lang="en">motivated payment</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/for_voyage"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Crew_Payment"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P17i_motivated"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/name_with_ownership">
+    <rdfs:label xml:lang="en">name with ownership</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Name"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ownership_under_name"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/named_with">
+    <rdfs:label xml:lang="en">named with</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Name"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/under_name"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Construction"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/navigated">
+    <rdfs:label xml:lang="en">navigated</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/navigated_by_captain"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/navigated_by_captain">
+    <rdfs:label xml:lang="en">navigated by captain</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the participation of an E39 Actor as being responsible for the navigation of the voyage. The captain may change from voyage to voyage. The concept of the captain is normally synonym to the concept of ruling, of the power of governing, so in that sense should be mapped to the E74 Group. But, in the context of the SeaLiT project, there is the requirement for a simpler structure with more details on the biographic data of a captain, so the decision is to model the captain as a role by person (not by group).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/navigated"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/of_share">
+    <rdfs:label xml:lang="en">of share</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the number of shares hold by an owner.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Shareholding"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ownership_is_initialized_by">
+    <rdfs:label xml:lang="en">ownership is initialized by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates the beginning of an instance of Ship Ownership Phase with the Ship Registration that initiates it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/initializes_ownership"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/is_initialized_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ownership_is_terminated_by">
+    <rdfs:label xml:lang="en">ownership is terminated by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates the end of existence of an instance of Ship Ownership Phase with a De-flagging event that terminates it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/terminates_ownership"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/De-flagging"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/is_terminated_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ownership_under_name">
+    <rdfs:label xml:lang="en">ownership under name</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the change of ship name because of an ownership phase. It can be used to provide previous/old names of a ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/name_with_ownership"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Name"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/participates_with_share">
+    <rdfs:label xml:lang="en">participates with share</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_shareholder"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Shareholding"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/is_owner_of_phase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/passing_is_part_of">
+    <rdfs:label xml:lang="en">passing is part of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Passing"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/consists_of_passing"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/person_is_registered_by">
+    <rdfs:label xml:lang="en">person is registered by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/registers_person"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Civil_Registration"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/profession_of">
+    <rdfs:label xml:lang="en">profession of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Profession"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_profession"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/promoted_into_employment_position_type">
+    <rdfs:label xml:lang="en">promoted into employment position type</rdfs:label>
+    <rdfs:comment xml:lang="en">This property records the employment (job) position type that was promoted by a promotion activity. In that sense, we regard that a promotion can be related to a social status promotion or to a job/career promotion.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Promotion"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/employment_position_type_was_promoted_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Profession"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141_assigned"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/promoted_into_status_type">
+    <rdfs:label xml:lang="en">promoted into status type</rdfs:label>
+    <rdfs:comment xml:lang="en">This property records the social status type that was promoted by a promotion activity. In that sense, we regard that a promotion can be related to a social status promotion or to a job/career promotion.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Promotion"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/status_type_was_promoted_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141_assigned"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/provided_employment">
+    <rdfs:label xml:lang="en">provided employment</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/employment_provided_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/provided_service"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/provided_money">
+    <rdfs:label xml:lang="en">provided money</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/money_provided_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/provided_service">
+    <rdfs:label xml:lang="en">provided service</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/service_provided_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Service"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/received_money">
+    <rdfs:label xml:lang="en">received money</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/money_provided_to"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/registered_by">
+    <rdfs:label xml:lang="en">registered by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the authority, the port of registry, which is responsible for the registration of a ship.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_responsible_for_registration"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Port_of_Registry"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/registers">
+    <rdfs:label xml:lang="en">registers</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates a ship and the ship registration activity that registered and identified it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_registered_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/registers_person">
+    <rdfs:label xml:lang="en">registers person</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes a person that is registered by a civil registration activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Civil_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/person_is_registered_by"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+  </owl:ObjectProperty>
+  <owl:SymmetricProperty rdf:about="http://www.sealitproject.eu/ontology/related_to">
+    <rdfs:label xml:lang="en">related to</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the existence of a relation between persons, without the need to also specify the kind of relation. It is used in cases in which the types of the possible relationships between persons are many and not defined by the model, or in cases in which there is lack of knowledge about the kind of the relationships and there is only a requirement to mark just the existence of a link between persons. The property of property has type: E55 Type can be used to specify the type of relation, e.g., by linking to a vocabulary or thesaurus.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+  </owl:SymmetricProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/repaired">
+    <rdfs:label xml:lang="en">repaired</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies a ship repaired by a ship repair activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Repair"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_repaired_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P31_has_modified"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/service_of">
+    <rdfs:label xml:lang="en">service of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/for_service"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/service_provided_by">
+    <rdfs:label xml:lang="en">service provided by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the intention of an E39 Actor to provide a service. The property of property in the role of allows specifying the nature of an Actor’s service provision.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/provided_service"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ship_ID_identifies">
+    <rdfs:label xml:lang="en">ship ID identifies</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_ID"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/has_ship_ID"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P1i_identifies"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/ship_ID_of">
+    <rdfs:label xml:lang="en">ship ID of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_ID"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/with_ship_ID"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/started">
+    <rdfs:label xml:lang="en">started</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes an employment that was started by a recruitment activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Recruitment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/started_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P175_starts_before_or_with_the_start_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/started_by">
+    <rdfs:label xml:lang="en">started by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Employment"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/started"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Recruitment"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P175i_starts_after_or_with_the_start_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/starting_from">
+    <rdfs:label xml:lang="en">starting from</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the spatial location from which a voyage started. It is the beginning of the route.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_starting_place_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/status_type_was_promoted_by">
+    <rdfs:label xml:lang="en">status type was promoted by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Social_Status"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/promoted_into_status_type"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Promotion"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P141i_was_assigned_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/student_in">
+    <rdfs:label xml:lang="en">student in</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/had_student"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/terminates">
+    <rdfs:label xml:lang="en">terminates</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_terminated_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Legal_Object_Relationship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/terminates_ownership">
+    <rdfs:label xml:lang="en">terminates ownership</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/De-flagging"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ownership_is_terminated_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Ownership_Phase"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.sealitproject.eu/ontology/terminates"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/thing_of">
+    <rdfs:label xml:lang="en">thing of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/for_thing"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Things"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/through_place">
+    <rdfs:label xml:lang="en">through place</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of a place with an instance of a passing activity through that place. This class provides information about the types of movements of a ship, which are parts of the route (of the voyage), and are documented as that.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Passing"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_place_of_passing_through"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/under_name">
+    <rdfs:label xml:lang="en">under name</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the name of the ship with the ship construction information.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Construction"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/named_with"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Name"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/unloaded">
+    <rdfs:label xml:lang="en">unloaded</rdfs:label>
+    <rdfs:comment xml:lang="en">This property associates an instance of E18 Physical Thing with an instance of the unloading activity that moved (unloaded) it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Unloading"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_unloaded_by"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/unloading_is_part_of">
+    <rdfs:label xml:lang="en">unloading is part of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Unloading"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/consists_of_unloading"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P9i_forms_part_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/voyage_of">
+    <rdfs:label xml:lang="en">voyage of</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the voyage of a ship, its movement/travelling at sea.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/voyages"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/voyages">
+    <rdfs:label xml:lang="en">voyages</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/voyage_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Voyage"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12i_was_present_at"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_constructed_by">
+    <rdfs:label xml:lang="en">was constructed by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/constructed"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Construction"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_flag_of">
+    <rdfs:label xml:lang="en">was flag of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Country"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/had_flag_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_loaded_by">
+    <rdfs:label xml:lang="en">was loaded by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/loaded"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Loading"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_mediated_by">
+    <rdfs:label xml:lang="en">was mediated by</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the E39 Actor that participated in the transaction (Money for Service activity) in the role of a mediator. For example, there are sources that refer that seamen used to provide money to the captain of the ship in order that the wives to receive these money (so the captain was the mediator of this transaction).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_mediator_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_mediator_of">
+    <rdfs:label xml:lang="en">was mediator of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/was_mediated_by"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_price_of">
+    <rdfs:label xml:lang="en">was price of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/had_money_value"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Money_for_Service"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_promoted_by">
+    <rdfs:label xml:lang="en">was promoted by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/concerned"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Promotion"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P140i_was_attributed_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_punished_by">
+    <rdfs:label xml:lang="en">was punished by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_given_to"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Punishment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_repaired_by">
+    <rdfs:label xml:lang="en">was repaired by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/repaired"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_Repair"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P31i_was_modified_by"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/was_unloaded_by">
+    <rdfs:label xml:lang="en">was unloaded by</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/unloaded"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Unloading"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/with_ID">
+    <rdfs:label xml:lang="en">with ID</rdfs:label>
+    <rdfs:comment xml:lang="en">This property records the identifier that was assigned to a person in a Civil Registration activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Civil_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ID_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sealitproject.eu/ontology/with_number_of_students">
+    <rdfs:label xml:lang="en">with number of students</rdfs:label>
+    <rdfs:comment xml:lang="en">This property describes the number of the students participating in a teaching unit.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Teaching_Unit"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/with_ship_ID">
+    <rdfs:label xml:lang="en">with ship ID</rdfs:label>
+    <rdfs:comment xml:lang="en">This property records the ship identifier assigned by a Ship Registration activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/ship_ID_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Ship_ID"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/with_ship_flag_of">
+    <rdfs:label xml:lang="en">with ship flag of</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the country represented in the ship flag of a Ship Registration activity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/Ship_Registration"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_flag_of"/>
+    <rdfs:range rdf:resource="http://www.sealitproject.eu/ontology/Country"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/works_at">
+    <rdfs:label xml:lang="en">works at</rdfs:label>
+    <rdfs:comment xml:lang="en">This property identifies the workplace, meaning the organisation/company in which a person works at. The in the role of property of the property allows specifying the nature, the role of an actor’s work in the organisation/company.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <owl:inverseOf rdf:resource="http://www.sealitproject.eu/ontology/is_working_place_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P107i_is_current_or_former_member_of"/>
+  </owl:ObjectProperty>
+  
+
+<!--
+
+Classes and properties for encoding in RDF the below 
+properties of properties of the SeaLiT Ontology: 
+- in the role of: E55 Type (property of 'service provided by (provided service)')
+- in the role of: E55 Type (property of 'works at (is working place of)')
+- has type: E55 Type (property of 'related to')
+- with status of participation (property of 'had student (student in)')
+
+The model makes use of the class 'PC0 Typed CRM Property' introduced by 
+CIDOC-CRM  for encoding properties of properties in RDF 
+(https://www.cidoc-crm.org/Resources/modeling-properties-of-properties-in-the-cidoc-crm-rdf-encoding).
+
+
+Created on: March 17, 2022
+
+-->
+
+  <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/PC0_Typed_CRM_Property">
+	<rdfs:label xml:lang="en">PC0 Typed CRM Property</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/PC_provided_service"> 
+	<rdfs:label xml:lang="en">PC provided service</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/PC0_Typed_CRM_Property"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/PCa_in_the_role_of">
+	<rdfs:label xml:lang="en">in the role of</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/PC_provided_service"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>	
+  </owl:ObjectProperty>
+
+
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/PC_works_at"> 
+	<rdfs:label xml:lang="en">PC works at</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/PC0_Typed_CRM_Property"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/PCb_in_the_role_of">
+	<rdfs:label xml:lang="en">in the role of</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/PC_works_at"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>	
+  </owl:ObjectProperty>
+
+
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/PC_related_to"> 
+	<rdfs:label xml:lang="en">PC related to</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/PC0_Typed_CRM_Property"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/PC_has_type">
+	<rdfs:label xml:lang="en">has type</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/PC_related_to"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>	
+  </owl:ObjectProperty>
+
+
+  <owl:Class rdf:about="http://www.sealitproject.eu/ontology/PC_student_in"> 
+	<rdfs:label xml:lang="en">PC student in</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/PC0_Typed_CRM_Property"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="http://www.sealitproject.eu/ontology/PC_with_status_of_participation">
+	<rdfs:label xml:lang="en">with status of participation</rdfs:label>
+	<rdfs:domain rdf:resource="http://www.sealitproject.eu/ontology/PC_student_in"/>
+	<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>	
+  </owl:ObjectProperty>
+
+</rdf:RDF>

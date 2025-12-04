@@ -1,0 +1,32 @@
+# source-metadata.yml
+# rdf-etl-pipelines
+# sources/datasets
+# Metadata Template
+# 2025-12-03
+Dataset:
+  identifier: ed58bd7e-fdd1-66b0-8c75-f7296af091b1
+  verbatimFilename: Marine_Heritage_Shipwrecks_Database.csv
+  filename: marine_heritage_shipwrecks.csv
+  title: Marine Heritage Shipwrecks Database
+  description: Dataset contains information regarding shipwrecks in waters off Nova Scotia including wreck name, date and type of event, and approximate location.
+  landingPage: https://open.canada.ca/data/en/dataset/ed58bd7e-fdd1-66b0-8c75-f7296af091b1
+  version: 2024-07-24
+  versionNotes: Version inherited from release date
+  accessRights:
+  license:  https://novascotia.ca/opendata/licence.asp
+  publisher:  Government of Nova Scotia
+  provenance:
+  modified: 2025-09-24
+  accessed: 2025-12-03
+  language: en
+  type: Static Dataset
+  documentation: https://data.novascotia.ca/Arts-Culture-and-History/Marine-Heritage-Shipwrecks-Database/rq3a-h5hk/about_data
+  format: CSV
+  processing:
+  relatedResource: Marine_Heritage_Shipwrecks_Database_Data_Dictionary.xlsx
+Distribution:
+  accessURL: https://data.novascotia.ca/api/views/rq3a-h5hk/rows.tsv?accessType=DOWNLOAD&bom=true&format=true&delimiter=%3B
+  mediaType: text/csv
+
+
+

@@ -1,0 +1,28 @@
+# source-metadata.yml
+# rdf-etl-pipelines
+# sources/datasets
+# Metadata Template
+# 2025-12-03
+Dataset:
+  identifier: 1673279027989r6537821219104192
+  filename: Wrecks_and_Obstructions_in_AWOIS.csv
+  title: Wrecks and Obstructions in AWOIS
+  description: The file Wrecks_and_Obstructions.csv contains data on wrecks and obstructions in coastal waters, including their location, type, depth, and historical information
+  landingPage: https://noaa.hub.arcgis.com/datasets/noaa::wrecks-and-obstructions-in-awois/explore
+  version:
+  versionNotes: 
+  accessRights:
+  license: Not provided
+  publisher: NOAA ArcGIS Hub
+  provenance:
+  modified: 2023-07-18
+  accessed: 2025-12-03
+  language: en
+  type: Static Dataset
+  documentation: Wrecks_and_Obstructions_in_AWOIS.xml
+  format: CSV
+  processing: Transformed into tabular format from spatial data (feature layer)
+  relatedResource:
+Distribution:
+  accessURL: https://www.kaggle.com/api/v1/datasets/download/thedevastator/wrecks-and-obstructions-dataset?datasetVersionNumber=2
+  mediaType: application/zip

@@ -1,0 +1,9 @@
+<https://linked.art/example/place/raleigh-simple> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300008347> .
+<https://linked.art/example/place/museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/raleigh-simple> <http://www.w3.org/2000/01/rdf-schema#label> "Raleigh, NC" .
+<https://linked.art/example/place/raleigh-simple> <http://www.cidoc-crm.org/cidoc-crm/P89_falls_within> <https://linked.art/example/place/north-carolina> .
+<https://linked.art/example/place/north-carolina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/north-carolina> <http://www.w3.org/2000/01/rdf-schema#label> "North Carolina" .
+<https://linked.art/example/place/raleigh-simple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+<https://linked.art/example/place/raleigh-simple> <http://www.cidoc-crm.org/cidoc-crm/P168_place_is_defined_by> "POINT(-78.6382 35.7796)" .
+<https://linked.art/example/place/museum> <http://www.w3.org/2000/01/rdf-schema#label> "North Carolina Museum of Natural Sciences" .
