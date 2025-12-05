@@ -2,9 +2,8 @@
 
 ## Overview
 Shipwreck datasets offer a unique opportunity to establish linkages between multiple Linked Art classes and LUX object types in both the 
-Cultural Heritage and Natural History domains. Linked data is a powerful tool for linking data across disciplines by interlinking resources. 
-The primary criterion for selection of an external dataset was based on the theoretical relationships that can be established between the 
-objects in the dataset and the objects in the LUX domain. Once the general type of dataset was selected, a collection of shipwreck datasets 
+Cultural Heritage and Natural History domains. 
+The primary criterion for selection of shipwreck data as the proof of concept was a combination of personal interest and the diversity of potential linkages. Once the general type of dataset was selected, a collection of shipwreck datasets 
 was identified (see [Dataset README](../sources/datasets/README.md) and evaluated for suitability, completeness, (perceived) quality, and 
 consistency. For an overview of shipwreck semantics, see the SeaLiT ontology.
 
