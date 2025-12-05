@@ -9,7 +9,7 @@ General project documentation are stored under [project-docs](/project-docs) and
 
 ## Semantic Connections
 The project also explores potential semantic relationships between shipwreck records and other linked resources, with hypothetical examples illustrated in the diagram below.
-![](project-docs\diagrams\ShipwreckLinkages_20251204.png)
+![](project-docs\diagrams\ShipwreckLinkages.png)
 
 Final transformations and associated documentation generated with the aid of the Claude Sonnet 4.5 LLM Model    
   

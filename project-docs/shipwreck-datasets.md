@@ -18,5 +18,5 @@ E. Are the columns properly formatted (For the year column, are the values integ
 4. Select the dataset and run the pipeline to produce a final Linked Art compliant JSON-LD dataset.   
 
 ## Hypothetical Shipwreck Concept Linkages
-![](https://github.com/ben-norton/shipwreck-linked-data-pipeline/blob/main/project-docs/diagrams/ShipwreckLinkages_20251204.png)
+![](https://github.com/ben-norton/shipwreck-linked-data-pipeline/blob/main/project-docs/diagrams/ShipwreckLinkages.png)
 
