@@ -15,10 +15,6 @@ Final transformations and associated documentation generated with the aid of the
   
 The Shipwreck Places JSON-LD and Shipwreck Events JSON-LD are generated separately and named accordingly for illustration purposes. The two files would be merged prior to being ingested into a production environment index, the 
 
-Hypothetical Linkages 
-![](https://github.com/ben-norton/shipwreck-linked-data-pipeline/blob/main/project-docs/diagrams/ShipwreckLinkages_20251204.png)
-
-
 
 ## Project Directory Structure
 ```
