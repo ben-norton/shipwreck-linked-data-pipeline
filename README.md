@@ -18,7 +18,7 @@ The Shipwreck Places JSON-LD and Shipwreck Events JSON-LD are generated separate
 
 ## Project Directory Structure
 ```
-shipwrecks-linked-data-pipelines/
+shipwreck-linked-data-pipelines/
 ├── data/                   | Input and output data
 │   ├── input/              | Pipeline Input data
 │   │   ├── remapped/       | Remapped verbatim datasets
