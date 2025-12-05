@@ -1,6 +1,5 @@
 # Shipwreck Linked Data Pipeline
-This proof-of-concept demonstrates a Python-based ETL (Extract, Transform, Load) pipeline that converts shipwreck data from tabular formats into Linked Art-compliant JSON-LD. 
-The pipeline transforms external shipwreck datasets into structured Linked Data, enabling their integration with and enrichment of existing internal collections.
+This proof-of-concept demonstrates a Python-based ETL (Extract, Transform, Load) pipeline that converts tabular shipwreck data  into Linked Art-compliant JSON-LD, enabling their integration with and enrichment of existing internal collections.
 
 ## Project Scope
 General project documentation stored under [project-docs](/project-docs) and transformation results under [/pipeline/linked-art](/pipeline/linked-art) covers three key areas:
