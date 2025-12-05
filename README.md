@@ -13,7 +13,7 @@ The project also explores potential semantic relationships between shipwreck rec
 
 Final transformations and associated documentation generated with the aid of the Claude Sonnet 4.5 LLM Model    
   
-The Shipwreck Places JSON-LD and Shipwreck Events JSON-LD are generated separately and named accordingly for illustration purposes. The two files would be merged prior to being ingested into a production environment index, the 
+The Shipwreck Places JSON-LD and Shipwreck Events JSON-LD are generated separately and named accordingly for illustration purposes. The two files would be merged prior to being ingested into a production environment index.
 
 
 ## Project Directory Structure
