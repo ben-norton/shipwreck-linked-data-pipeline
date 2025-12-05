@@ -9,7 +9,7 @@ consistency. For an overview of shipwreck semantics, see the SeaLiT ontology.
 ## General Procedure for Dataset Selection:
 1. Identify and download multiple shipwreck datasets
 2. Profile each dataset using the utility scripts
-3. Use the generated profiles to assess each dataset for suitability, completeness, (perceived) quality, and consistency. In general, the more complete and consistent the dataset will yield more linkages between resources, the ultimate goal of linked data architectures. Example criteria include:
+3. Use the generated profiles to assess each dataset for suitability, completeness, (perceived) quality, and consistency. In general, the most complete and consistent  dataset will yield the most linkages between resources, the ultimate goal of linked data architectures. Example criteria include:
 A. What is the completeness percentage for each column? Are there empty columns?
 B. Does the dataset include a dictionary of column names? If not, do all the columns make sense?
 C. Does the dataset contain latitude and longitude coordinates or just a location description?
