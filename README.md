@@ -8,7 +8,7 @@ General project documentation are stored under [project-docs](/project-docs) and
 3. **Data modeling** – Overview of mapping shipwreck records to Linked Art, a [Linked Open Usable Data (LOUD)](https://linked.art/loud/) specification.
 
 ## Semantic Connections
-The project also explores potential semantic relationships between shipwreck records and other linked resources, with examples illustrated in the diagram below.
+The project also explores potential semantic relationships between shipwreck records and other linked resources, with hypothetical examples illustrated in the diagram below.
 ![](project-docs\diagrams\ShipwreckLinkages_20251204.png)
 
 Final transformations and associated documentation generated with the aid of the Claude Sonnet 4.5 LLM Model    
